@@ -181,6 +181,38 @@
   background-color: #161616;
   color: #F7F8F9;
 }
+#Dark .cuisine {
+  background-color: #161616;
+  color: #F7F8F9;
+}
+#Dark .events {
+  background-color: #161616;
+  color: #F7F8F9;
+}
+#Dark .voucher {
+  background-color: #161616;
+  color: #F7F8F9;
+}
+#Dark .reservation {
+  background-color: #161616;
+  color: #F7F8F9;
+}
+#Dark .openinghours {
+  background-color: #161616;
+  color: #F7F8F9;
+}
+#Dark .team {
+  background-color: #161616;
+  color: #F7F8F9;
+}
+#Dark .voucher {
+  background-color: #161616;
+  color: #F7F8F9;
+}
+#Dark .newsletter {
+  background-color: #161616;
+  color: #F7F8F9;
+}
 #Dark .topbar a {
   color: #F7F8F9;
 }
@@ -243,6 +275,34 @@
   fill: #000000;
 }
 #Light .home {
+  background-color: #FFFDFA;
+  color: #000000;
+}
+#Light .events {
+  background-color: #FFFDFA;
+  color: #000000;
+}
+#Light .newsletter {
+  background-color: #FFFDFA;
+  color: #000000;
+}
+#Light .reservation {
+  background-color: #FFFDFA;
+  color: #000000;
+}
+#Light .openinghours {
+  background-color: #FFFDFA;
+  color: #000000;
+}
+#Light .team {
+  background-color: #FFFDFA;
+  color: #000000;
+}
+#Light .voucher {
+  background-color: #FFFDFA;
+  color: #000000;
+}
+#Light .cuisine {
   background-color: #FFFDFA;
   color: #000000;
 }
@@ -318,6 +378,86 @@ body {
 }
 .home ul li {
   padding: 10px;
+}
+
+.voucher {
+  color: #000000;
+  background-color: #FFFDFA;
+  min-height: 70em;
+}
+.voucher h1 {
+  padding: 15px;
+  margin: 0px;
+}
+
+.team {
+  color: #000000;
+  background-color: #FFFDFA;
+  min-height: 70em;
+}
+.team h1 {
+  padding: 15px;
+  margin: 0px;
+}
+
+.jobs {
+  color: #000000;
+  background-color: #FFFDFA;
+  min-height: 70em;
+}
+.jobs h1 {
+  padding: 15px;
+  margin: 0px;
+}
+
+.openinghours {
+  color: #000000;
+  background-color: #FFFDFA;
+  min-height: 70em;
+}
+.openinghours h1 {
+  padding: 15px;
+  margin: 0px;
+}
+
+.reservation {
+  color: #000000;
+  background-color: #FFFDFA;
+  min-height: 70em;
+}
+.reservation h1 {
+  padding: 15px;
+  margin: 0px;
+}
+
+.newsletter {
+  color: #000000;
+  background-color: #FFFDFA;
+  min-height: 70em;
+}
+.newsletter h1 {
+  padding: 15px;
+  margin: 0px;
+}
+
+.cuisine {
+  color: #000000;
+  background-color: #FFFDFA;
+  min-height: 70em;
+}
+.cuisine h1 {
+  padding: 15px;
+  margin: 0px;
+}
+
+.events {
+  color: #000000;
+  background-color: #FFFDFA;
+  min-height: 70em;
+}
+.events h1 {
+  padding: 15px;
+  margin: 0px;
 }
 
 .jobs {

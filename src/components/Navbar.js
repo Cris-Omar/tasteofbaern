@@ -35,7 +35,7 @@ export default function NavBar() {
             <Link to="/events">Events</Link>
             <Link to="/voucher">Voucher</Link>
             <Link to="/reservation">Reservation</Link>
-            <Link to="/openninghours">opening hours</Link>
+            <Link to="/openinghours">opening hours</Link>
             <Link to="/">DE</Link>
             <button onClick={handleClick} className="themeChanger">
               {theme === "Light" ? <Moon /> : <Sun />}

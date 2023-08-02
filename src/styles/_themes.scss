@@ -25,6 +25,46 @@
     background-color: $PrimDarkColor;
     color: $SecLightColor;
   }
+
+  .cuisine {
+    background-color: $PrimDarkColor;
+    color: $SecLightColor;
+  }
+
+  .events {
+    background-color: $PrimDarkColor;
+    color: $SecLightColor;
+  }
+
+  .voucher {
+    background-color: $PrimDarkColor;
+    color: $SecLightColor;
+  }
+
+  .reservation {
+    background-color: $PrimDarkColor;
+    color: $SecLightColor;
+  }
+
+  .openinghours {
+    background-color: $PrimDarkColor;
+    color: $SecLightColor;
+  }
+
+  .team {
+    background-color: $PrimDarkColor;
+    color: $SecLightColor;
+  }
+
+  .voucher {
+    background-color: $PrimDarkColor;
+    color: $SecLightColor;
+  }
+
+  .newsletter {
+    background-color: $PrimDarkColor;
+    color: $SecLightColor;
+  }
   
   .topbar{
     a{
@@ -46,7 +86,6 @@
     }
   }
   
-
   .contactForm{
     .object{
       input, textarea {
@@ -107,6 +146,41 @@
   svg{fill: $SecDarkColor;}
 
   .home {
+    background-color: $PrimLightColor;
+    color: $SecDarkColor;
+  }
+
+  .events {
+    background-color: $PrimLightColor;
+    color: $SecDarkColor;
+  }
+
+  .newsletter {
+    background-color: $PrimLightColor;
+    color: $SecDarkColor;
+  }
+
+  .reservation {
+    background-color: $PrimLightColor;
+    color: $SecDarkColor;
+  }
+
+  .openinghours {
+    background-color: $PrimLightColor;
+    color: $SecDarkColor;
+  }
+
+  .team {
+    background-color: $PrimLightColor;
+    color: $SecDarkColor;
+  }
+
+  .voucher {
+    background-color: $PrimLightColor;
+    color: $SecDarkColor;
+  }
+
+  .cuisine {
     background-color: $PrimLightColor;
     color: $SecDarkColor;
   }
