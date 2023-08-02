@@ -1,0 +1,173 @@
+#Dark {
+  background-color: $PrimDarkColor;
+  color: $SecLightColor;
+  
+  p{color: $SecLightColor;}
+  a {color: $SecLightColor;}
+  h2 {color: $SecLightColor;}
+  h3 {color:$SecLightColor;}
+  label{color: $SecLightColor;}
+  svg{fill: $SecLightColor;}
+
+  .topbar {
+    .topbarExtender {
+      .topbarWrapper {
+        .logo {
+          svg{
+            fill: black;
+            }
+          }
+        }
+      }
+    }
+
+  .home {
+    background-color: $PrimDarkColor;
+    color: $SecLightColor;
+  }
+  
+  .topbar{
+    a{
+      color: $SecLightColor;
+    }
+    .topbarExtender{
+      background-color: $SecDarkColor;
+      .topbarWrapper {
+        background-color: $SecDarkColor;
+        button{
+          svg{
+            fill: yellow;
+          }
+          &:hover {
+            background-color: $ColorOnHover;
+          }
+        }
+      }
+    }
+  }
+  
+
+  .contactForm{
+    .object{
+      input, textarea {
+        background-color: $SecDarkColor;
+      }
+    }
+  }
+  
+  .footer{
+    background-color: $SecDarkColor;
+    p {
+      color: $SecLightColor;
+    }
+    .socialMedia {
+      li{
+        &:hover {
+          background-color: $ColorOnHover;
+        }
+
+        svg {
+          fill: $SecLightColor;
+          &:hover {
+            fill: $SecDarkColor;
+          }
+        }
+      }
+    }
+    .impresum {
+      a {
+        &:hover{
+          color: $SecDarkColor;
+          background-color: $ColorOnHover;
+        }
+      }
+    }
+  }
+
+  .nomatch {
+    background-color: $PrimDarkColor;
+    color: $SecLightColor;
+  }
+}
+  
+//______________________________________________
+//______________________________________________
+// __________________ LightTheme ______________
+//_____________________________________________
+//_____________________________________________
+
+#Light {
+  background-color: $PrimLightColor;
+  color: $SecDarkColor;
+
+  p{color: $PrimDarkColor;}
+  a{color: $SecDarkColor;}
+  h2{color: $SecDarkColor;}
+  label{color: $SecDarkColor;}
+  svg{fill: $SecDarkColor;}
+
+  .home {
+    background-color: $PrimLightColor;
+    color: $SecDarkColor;
+  }
+
+  .topbar{
+    a{
+      color: $SecDarkColor;
+    }
+    .topbarExtender{
+      background-color: $SecLightColor;
+      .topbarWrapper {
+        background-color: $SecLightColor;
+        button{
+          svg{
+            fill: #02061E;
+          }
+          &:hover {
+            background-color: $ColorOnHover;
+          }
+        }
+      }
+    }
+  }
+
+  .contactForm{
+    .object{
+      input, textarea {
+        background-color: $SecLightColor;
+      }
+    }
+  }
+
+  .footer{
+    .socialMedia {
+      background-color: $SecLightColor;
+      li{
+        &:hover {
+          background-color: $SecLightColor; 
+        }
+
+        svg {
+          fill: $SecDarkColor;
+          &:hover {
+            fill: $ColorOnHover;
+          }
+        }
+      }
+    }
+
+    .impresum {
+      a {
+        &:hover{
+          background-color: $ColorOnHover;
+        }
+      }
+    }
+  }
+
+  .nomatch {
+    background-color: $PrimLightColor;
+    color: $SecDarkColor;
+  }
+}
+

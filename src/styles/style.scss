@@ -1,53 +1,173 @@
-.App {
-    text-align: center;
+//variables
+$PrimLightColor:#FFFDFA;
+$SecLightColor:#F7F8F9;
+$ColorOnHover: grey;
+$PrimDarkColor : #161616;
+$SecDarkColor : #000000;
+
+//import extern style Files
+@import "./navbar";
+@import "./footer";
+@import "./Themes";
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  font-size: 17px;
+}
+
+//___________________ Home
+.home {
+  min-height: 70em;
+  margin: auto;
+  max-width: 1350px;
+  box-sizing: border-box;
+
+  h2{
+    padding: 50px;
+    margin: 0px;
   }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
+
+  .locationchooser {
+    margin: auto;
+    width: 55%;
+    .maps{
+        margin: auto;
+        width: 680px;
+        height: 500px;
     }
   }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
+
+  ul{
+    list-style: none;
+
+    li{
+      padding: 10px;
+
     }
-    to {
-      transform: rotate(360deg);
+  } 
+}
+
+//__________________ Jobs
+.jobs {
+  color: $SecDarkColor;
+  background-color: $PrimLightColor;
+  min-height: 70em;
+
+  h1{
+    padding: 15px;
+    margin: 0px;
+  }
+}
+
+//__________________ LegalNotice
+.legalnotice {
+  color: $SecDarkColor;
+  background-color: $PrimLightColor;
+  min-height: 70em;
+
+  h1{
+    padding: 15px;
+    margin: 0px;
+  }
+}
+
+//__________________ NoMatch
+.nomatch {
+  color: $SecDarkColor;
+  background-color: $PrimLightColor;
+  min-height: 70em;
+
+  h1 {
+    padding-top:50px;
+    margin: 0px;
+  }
+
+  h2 {
+    padding:50px;
+  }
+}
+
+//__________________ Contact
+.contact {
+  color: $SecDarkColor;
+  background-color: $PrimLightColor;
+  min-height: 70em;
+
+  h1{
+      padding: 15px;
+      margin: 0px;
+  }
+
+  .contactForm {
+    max-width: 600px;
+    padding-top: 100px;
+    margin: auto;
+
+    form {
+      padding: 15px;
+      margin: auto;
+
+      .object {
+
+        label {
+          color:$SecDarkColor;
+          margin: 20px 0px;
+          text-align: left;
+          display: block;
+        }
+
+        input, textarea {
+          width: 100%;
+          outline: none;
+          resize: none;
+          border: none;
+          border-bottom: 1px solid rgb(184, 177, 177);
+          &:focus {
+            border-bottom: 1px solid black;
+            filter: brightness(1.2);
+          }
+        }
+      }
+
+      .fileUploadIcon{
+        max-width: 200px;
+        margin: auto;
+        
+        label {
+          color: $SecDarkColor;
+          display: block;
+        }
+
+        svg {
+          fill: $SecDarkColor;
+          width: 80px;
+          margin-top: 15px;
+          margin: 10px 0px 15px 0px;
+          &:hover {
+            fill: grey;
+            filter: brightness(0.9);
+            cursor: pointer;
+          }
+        }
+      }
+
+      button {
+        margin-top: 50px;
+        width: 90%;
+        max-width: 150px;
+        background-color: #33383b;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 17px;
+      }
     }
   }
-  
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
-  
+}
+

@@ -1,47 +1,420 @@
-.App {
-  text-align: center;
+.topbar .topbarExtender {
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.topbar .topbarExtender .topbarWrapper {
+  margin: auto;
   display: flex;
-  flex-direction: column;
+  max-width: 1260px;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
   align-items: center;
+}
+.topbar .topbarExtender .topbarWrapper .logo {
+  padding-left: 50px;
+}
+.topbar .topbarExtender .topbarWrapper .logo svg {
+  width: 250px;
+  height: 60px;
+}
+.topbar .topbarExtender .topbarWrapper .logo svg:hover {
+  filter: opacity(0.7);
+  cursor: pointer;
+  transition-timing-function: ease;
+}
+.topbar .topbarExtender .topbarWrapper button {
+  margin-right: 50px;
+  background: none;
+  color: inherit;
+  border: none;
+  border-radius: 5px;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  transition: background-color 2s, color 2s;
+  gap: 0.5rem;
+}
+.topbar .topbarExtender .topbarWrapper button svg {
+  width: 22px;
+  cursor: pointer;
+}
+.topbar .topbarExtender .topbarWrapper button svg:hover {
+  transition-timing-function: ease;
+  transition-duration: 0.6s;
+}
+.topbar .topbarExtender .topbarWrapper .navbarMenu {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.topbar .topbarExtender .topbarWrapper .navbarMenu a {
+  padding-right: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.topbar .topbarExtender .topbarWrapper .navbarMenu a:hover {
+  filter: opacity(0.7);
+  cursor: pointer;
+  transition-timing-function: ease;
+}
+@media screen and (max-width: 478px) {
+  .topbar .navbar {
+    padding-bottom: 0px;
+    border-radius: 0px;
+  }
+  .topbar .navbar .navbarWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .topbar .navbar .navbarWrapper .logo a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+  }
+  .topbar .navbar .navbarWrapper .logo a:hover {
+    background-color: #F7F8F9;
+    filter: brightness(0.9);
+    cursor: pointer;
+    transition-timing-function: ease;
+    transition-duration: 0.6s;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 250px;
+  background-color: #F7F8F9;
+  text-align: center;
+  color: #000000;
+  padding-top: 50px;
+  flex-direction: column;
+}
+.footer p {
+  font-size: 17px;
+  color: #000000;
+}
+.footer .socialMedia {
+  position: relative;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.footer .socialMedia li {
+  list-style: none;
+  margin: 7px;
+  border-radius: 50%;
+}
+.footer .socialMedia li:hover {
+  background-color: #F7F8F9;
+  filter: brightness(0.9);
+  cursor: pointer;
+  transition-timing-function: ease;
+  transition-duration: 0.6s;
+}
+.footer .socialMedia li svg {
+  fill: #000000;
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  border-radius: 10px;
+}
+.footer .socialMedia li svg:hover {
+  fill: #161616;
+  cursor: pointer;
+  transition-timing-function: ease;
+  transition-duration: 0.6s;
+}
+.footer .impresum {
+  color: #000000;
+  display: inline-block;
+}
+.footer .impresum a {
+  padding: 15px;
+  text-decoration: none;
+  color: #000000;
+  float: right;
+}
+.footer .impresum a:hover {
+  background-color: #F7F8F9;
+  filter: brightness(0.9);
+  cursor: pointer;
+  transition-timing-function: ease;
+  transition-duration: 0.6s;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 478px) {
+  .footer {
+    border-radius: 0px;
+  }
+}
+#Dark {
+  background-color: #161616;
+  color: #F7F8F9;
+}
+#Dark p {
+  color: #F7F8F9;
+}
+#Dark a {
+  color: #F7F8F9;
+}
+#Dark h2 {
+  color: #F7F8F9;
+}
+#Dark h3 {
+  color: #F7F8F9;
+}
+#Dark label {
+  color: #F7F8F9;
+}
+#Dark svg {
+  fill: #F7F8F9;
+}
+#Dark .topbar .topbarExtender .topbarWrapper .logo svg {
+  fill: black;
+}
+#Dark .home {
+  background-color: #161616;
+  color: #F7F8F9;
+}
+#Dark .topbar a {
+  color: #F7F8F9;
+}
+#Dark .topbar .topbarExtender {
+  background-color: #000000;
+}
+#Dark .topbar .topbarExtender .topbarWrapper {
+  background-color: #000000;
+}
+#Dark .topbar .topbarExtender .topbarWrapper button svg {
+  fill: yellow;
+}
+#Dark .topbar .topbarExtender .topbarWrapper button:hover {
+  background-color: grey;
+}
+#Dark .contactForm .object input, #Dark .contactForm .object textarea {
+  background-color: #000000;
+}
+#Dark .footer {
+  background-color: #000000;
+}
+#Dark .footer p {
+  color: #F7F8F9;
+}
+#Dark .footer .socialMedia li:hover {
+  background-color: grey;
+}
+#Dark .footer .socialMedia li svg {
+  fill: #F7F8F9;
+}
+#Dark .footer .socialMedia li svg:hover {
+  fill: #000000;
+}
+#Dark .footer .impresum a:hover {
+  color: #000000;
+  background-color: grey;
+}
+#Dark .nomatch {
+  background-color: #161616;
+  color: #F7F8F9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#Light {
+  background-color: #FFFDFA;
+  color: #000000;
 }
+#Light p {
+  color: #161616;
+}
+#Light a {
+  color: #000000;
+}
+#Light h2 {
+  color: #000000;
+}
+#Light label {
+  color: #000000;
+}
+#Light svg {
+  fill: #000000;
+}
+#Light .home {
+  background-color: #FFFDFA;
+  color: #000000;
+}
+#Light .topbar a {
+  color: #000000;
+}
+#Light .topbar .topbarExtender {
+  background-color: #F7F8F9;
+}
+#Light .topbar .topbarExtender .topbarWrapper {
+  background-color: #F7F8F9;
+}
+#Light .topbar .topbarExtender .topbarWrapper button svg {
+  fill: #02061E;
+}
+#Light .topbar .topbarExtender .topbarWrapper button:hover {
+  background-color: grey;
+}
+#Light .contactForm .object input, #Light .contactForm .object textarea {
+  background-color: #F7F8F9;
+}
+#Light .footer .socialMedia {
+  background-color: #F7F8F9;
+}
+#Light .footer .socialMedia li:hover {
+  background-color: #F7F8F9;
+}
+#Light .footer .socialMedia li svg {
+  fill: #000000;
+}
+#Light .footer .socialMedia li svg:hover {
+  fill: grey;
+}
+#Light .footer .impresum a:hover {
+  background-color: grey;
+}
+#Light .nomatch {
+  background-color: #FFFDFA;
+  color: #000000;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  font-size: 17px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+.home {
+  min-height: 70em;
+  margin: auto;
+  max-width: 1350px;
+  box-sizing: border-box;
+}
+.home h2 {
+  padding: 50px;
+  margin: 0px;
+}
+.home .locationchooser {
+  margin: auto;
+  width: 55%;
+}
+.home .locationchooser .maps {
+  margin: auto;
+  width: 680px;
+  height: 500px;
+}
+.home ul {
+  list-style: none;
+}
+.home ul li {
+  padding: 10px;
+}
+
+.jobs {
+  color: #000000;
+  background-color: #FFFDFA;
+  min-height: 70em;
+}
+.jobs h1 {
+  padding: 15px;
+  margin: 0px;
+}
+
+.legalnotice {
+  color: #000000;
+  background-color: #FFFDFA;
+  min-height: 70em;
+}
+.legalnotice h1 {
+  padding: 15px;
+  margin: 0px;
+}
+
+.nomatch {
+  color: #000000;
+  background-color: #FFFDFA;
+  min-height: 70em;
+}
+.nomatch h1 {
+  padding-top: 50px;
+  margin: 0px;
+}
+.nomatch h2 {
+  padding: 50px;
+}
+
+.contact {
+  color: #000000;
+  background-color: #FFFDFA;
+  min-height: 70em;
+}
+.contact h1 {
+  padding: 15px;
+  margin: 0px;
+}
+.contact .contactForm {
+  max-width: 600px;
+  padding-top: 100px;
+  margin: auto;
+}
+.contact .contactForm form {
+  padding: 15px;
+  margin: auto;
+}
+.contact .contactForm form .object label {
+  color: #000000;
+  margin: 20px 0px;
+  text-align: left;
+  display: block;
+}
+.contact .contactForm form .object input, .contact .contactForm form .object textarea {
+  width: 100%;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid rgb(184, 177, 177);
+}
+.contact .contactForm form .object input:focus, .contact .contactForm form .object textarea:focus {
+  border-bottom: 1px solid black;
+  filter: brightness(1.2);
+}
+.contact .contactForm form .fileUploadIcon {
+  max-width: 200px;
+  margin: auto;
+}
+.contact .contactForm form .fileUploadIcon label {
+  color: #000000;
+  display: block;
+}
+.contact .contactForm form .fileUploadIcon svg {
+  fill: #000000;
+  width: 80px;
+  margin-top: 15px;
+  margin: 10px 0px 15px 0px;
+}
+.contact .contactForm form .fileUploadIcon svg:hover {
+  fill: grey;
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+.contact .contactForm form button {
+  margin-top: 50px;
+  width: 90%;
+  max-width: 150px;
+  background-color: #33383b;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 17px;
 }/*# sourceMappingURL=style.css.map */

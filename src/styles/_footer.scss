@@ -1,0 +1,72 @@
+.footer {
+    width: 100%;
+    height: 250px;
+    background-color: $SecLightColor;
+    text-align: center;
+    color: $SecDarkColor;
+    padding-top: 50px;
+    flex-direction: column;
+    p {
+      font-size: 17px;
+      color: $SecDarkColor;
+    }
+  
+    .socialMedia {
+      position: relative;
+      display: flex;
+      justify-content: center;
+  
+      li{
+        list-style: none;
+        margin: 7px;
+        border-radius: 50%;
+        &:hover {
+          background-color: $SecLightColor;
+          filter: brightness(0.9);
+          cursor: pointer;
+          transition-timing-function: ease;
+          transition-duration: 0.6s;
+        }
+  
+        svg {
+          fill: $SecDarkColor;
+          width: 30px;
+          height: 30px;
+          padding: 8px;
+          border-radius: 10px;
+          &:hover {
+            fill: $PrimDarkColor;
+            cursor: pointer;
+            transition-timing-function: ease;
+            transition-duration: 0.6s;
+          }
+        }
+      }
+    }
+  
+    .impresum {
+      color: $SecDarkColor;
+      display: inline-block;
+      
+      a {
+        padding: 15px;
+        text-decoration: none;
+        color: $SecDarkColor;
+        float:right;
+        &:hover {
+          background-color: $SecLightColor;
+          filter: brightness(0.9);
+          cursor: pointer;
+          transition-timing-function: ease;
+          transition-duration: 0.6s;
+        }
+      }
+    }
+  }
+  
+  //phone screen
+  @media screen and (max-width: 478px) {
+    .footer {
+      border-radius: 0px;
+    }
+  }

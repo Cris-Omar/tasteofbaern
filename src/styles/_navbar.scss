@@ -1,0 +1,100 @@
+.topbar {
+  .topbarExtender {
+    width: 100%;
+    .topbarWrapper {
+      margin: auto;
+      display: flex;
+      max-width: 1260px;
+      flex-direction: row;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        padding-left: 50px;
+        svg{
+          width: 250px;
+          height: 60px;
+          &:hover {
+            filter: opacity(0.7);
+            cursor: pointer;
+            transition-timing-function: ease;
+          }
+        }
+      }
+
+      button{
+        margin-right: 50px;
+        background: none;
+        color: inherit;
+        border: none;
+        border-radius: 5px;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        transition: background-color 2s, color 2s;
+        gap: 0.5rem;
+
+        svg {
+          width: 22px;
+          cursor: pointer;
+          &:hover {
+            transition-timing-function: ease;
+            transition-duration: 0.6s;
+          }
+        }
+      }
+  
+      .navbarMenu {
+        flex: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        
+        a{
+          padding-right: 30px;
+          text-decoration: none;
+          font-weight: bold;
+          &:hover {
+            filter: opacity(0.7);
+            cursor: pointer;
+            transition-timing-function: ease;
+          }
+        }
+      }
+    }
+  }
+  
+  //phone screen
+  @media screen and (max-width: 478px) {
+    
+    .navbar {
+      padding-bottom: 0px;
+      border-radius: 0px;
+  
+      .navbarWrapper {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+  
+        .logo {
+          a {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: $SecDarkColor;
+            &:hover {
+              background-color: $SecLightColor;
+              filter: brightness(0.9);
+              cursor: pointer;
+              transition-timing-function: ease;
+              transition-duration: 0.6s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
