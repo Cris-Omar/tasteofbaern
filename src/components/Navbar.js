@@ -26,23 +26,25 @@ export default function NavBar() {
       <div className="topbarExtender">
         <div className='topbarWrapper'>
           <div className='logo'> 
-          {theme === "Light" ? <LogoforLight /> : <LogoforDark /> }
+          {theme === "Light" ? (
+              <Link to="/"><LogoforLight /></Link>
+            ) : (
+              <Link to="/"><LogoforDark /></Link>
+            )}
             
           </div>
           <div className="navbarMenu">
-            <Link to="/">Home</Link>
             <Link to="/cuisine">Cuisine</Link>
             <Link to="/events">Events</Link>
             <Link to="/voucher">Voucher</Link>
             <Link to="/reservation">Reservation</Link>
+            <Link to="/location">Location</Link>
             <Link to="/openinghours">opening hours</Link>
             <Link to="/">DE</Link>
-            <button onClick={handleClick} className="themeChanger">
+            <button onClick={handleClick}>
               {theme === "Light" ? <Moon /> : <Sun />}
             </button>
-
           </div>
-
         </div>
       </div>
     </div>

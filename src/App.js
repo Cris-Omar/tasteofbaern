@@ -12,11 +12,12 @@ import LegalNotice from './pages/footer/LegalNotice';
 import NoMatch from './pages/NoMatch';
 import Cuisine from "./pages/Cuisine"
 import Events from "./pages/Events"
-import Newsletter from "./pages/Newsletter"
+import Newsletter from "./pages/footer/Newsletter"
 import Reservation from "./pages/Reservation"
 import OpeningHours from "./pages/OpeningHours"
-import Team from "./pages/Team"
+import Team from "./pages/footer/Team"
 import Voucher from "./pages/Voucher"
+import Location from "./pages/Location"
 import { useThemeContext } from './components/context/ThemeContext';
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
             <Route path="jobs" element={<Jobs/>} />
             <Route path="legalnotice" element={<LegalNotice/>} />
             <Route path="cuisine" element={<Cuisine/>} />
-            
+            <Route path="location" element={<Location/>} />
             <Route path="events" element={<Events/>} />
             <Route path="newsletter" element={<Newsletter/>} />
             <Route path="reservation" element={<Reservation/>} />

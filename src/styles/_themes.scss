@@ -9,17 +9,22 @@
   label{color: $SecLightColor;}
   svg{fill: $SecLightColor;}
 
-  .topbar {
-    .topbarExtender {
+  .topbar{
+    a{
+      color: $SecLightColor;
+    }
+    .topbarExtender{
+      background-color: $SecDarkColor;
       .topbarWrapper {
-        .logo {
+        background-color: $SecDarkColor;
+        button{
           svg{
-            fill: black;
-            }
+            fill: yellow;
           }
         }
       }
     }
+  }
 
   .home {
     background-color: $PrimDarkColor;
@@ -65,25 +70,10 @@
     background-color: $PrimDarkColor;
     color: $SecLightColor;
   }
-  
-  .topbar{
-    a{
-      color: $SecLightColor;
-    }
-    .topbarExtender{
-      background-color: $SecDarkColor;
-      .topbarWrapper {
-        background-color: $SecDarkColor;
-        button{
-          svg{
-            fill: yellow;
-          }
-          &:hover {
-            background-color: $ColorOnHover;
-          }
-        }
-      }
-    }
+
+  .location {
+    background-color: $PrimDarkColor;
+    color: $SecLightColor;
   }
   
   .contactForm{
@@ -145,6 +135,18 @@
   label{color: $SecDarkColor;}
   svg{fill: $SecDarkColor;}
 
+  .topbar{
+    a{
+      color: $SecDarkColor;
+    }
+    .topbarExtender{
+      background-color: $SecLightColor;
+      .topbarWrapper {
+        background-color: $SecLightColor;
+      }
+    }
+  }
+
   .home {
     background-color: $PrimLightColor;
     color: $SecDarkColor;
@@ -185,24 +187,9 @@
     color: $SecDarkColor;
   }
 
-  .topbar{
-    a{
-      color: $SecDarkColor;
-    }
-    .topbarExtender{
-      background-color: $SecLightColor;
-      .topbarWrapper {
-        background-color: $SecLightColor;
-        button{
-          svg{
-            fill: #02061E;
-          }
-          &:hover {
-            background-color: $ColorOnHover;
-          }
-        }
-      }
-    }
+  .location {
+    background-color: $PrimLightColor;
+    color: $SecDarkColor;
   }
 
   .contactForm{

@@ -6,6 +6,7 @@ $PrimDarkColor : #161616;
 $SecDarkColor : #000000;
 
 //import extern style Files
+@import "~react-image-gallery/styles/css/image-gallery.css";
 @import "./navbar";
 @import "./footer";
 @import "./Themes";
@@ -26,20 +27,10 @@ body {
   margin: auto;
   max-width: 1350px;
   box-sizing: border-box;
+  padding-top: 20px;
 
   h2{
-    padding: 50px;
     margin: 0px;
-  }
-
-  .locationchooser {
-    margin: auto;
-    width: 55%;
-    .maps{
-        margin: auto;
-        width: 680px;
-        height: 500px;
-    }
   }
 
   ul{
@@ -50,6 +41,11 @@ body {
 
     }
   } 
+
+  svg {
+    width: 500px;
+    height: 250px;
+  }
 }
 
 //__________________ Voucher
@@ -169,6 +165,30 @@ body {
   h1{
     padding: 15px;
     margin: 0px;
+  }
+}
+
+//__________________ Location
+.location {
+  color: $SecDarkColor;
+  background-color: $PrimLightColor;
+  min-height: 70em;
+
+  h1{
+    padding: 15px;
+    margin: 0px;
+  }
+
+  .frame{
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 3%;
+    overflow:hidden;
+    position:relative;
+    z-index: 1;
   }
 }
 
