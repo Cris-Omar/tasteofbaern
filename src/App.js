@@ -11,7 +11,7 @@ import Jobs from './pages/footer/Jobs';
 import LegalNotice from './pages/footer/LegalNotice';
 import NoMatch from './pages/NoMatch';
 import Cuisine from "./pages/Cuisine"
-import Events from "./pages/Events"
+import Events from "./pages/events/Events"
 import Newsletter from "./pages/footer/Newsletter"
 import Reservation from "./pages/Reservation"
 import OpeningHours from "./pages/OpeningHours"

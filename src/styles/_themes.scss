@@ -17,9 +17,17 @@
       background-color: $SecDarkColor;
       .topbarWrapper {
         background-color: $SecDarkColor;
-        button{
-          svg{
-            fill: yellow;
+        .navbarMenu {
+          select{
+            color: $SecLightColor;
+            option {
+              background-color: $SecDarkColor;
+            }
+          }
+          button{
+            svg{
+              fill: yellow;
+            }
           }
         }
       }
@@ -39,6 +47,9 @@
   .events {
     background-color: $PrimDarkColor;
     color: $SecLightColor;
+    .PostsItems {
+      border-color: #FF9955;
+    }
   }
 
   .voucher {
@@ -143,6 +154,14 @@
       background-color: $SecLightColor;
       .topbarWrapper {
         background-color: $SecLightColor;
+        .navbarMenu {
+          select{
+            color: $SecDarkColor;
+            option {
+              background-color: $SecLightColor;
+            }
+          }
+        }
       }
     }
   }
@@ -155,6 +174,9 @@
   .events {
     background-color: $PrimLightColor;
     color: $SecDarkColor;
+    .PostsItems {
+      border-color: #FF9955;
+    }
   }
 
   .newsletter {

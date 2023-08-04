@@ -53,6 +53,7 @@ body {
   color: $SecDarkColor;
   background-color: $PrimLightColor;
   min-height: 70em;
+  padding-top: 30px;
 
   h1{
     padding: 15px;
@@ -65,6 +66,7 @@ body {
   color: $SecDarkColor;
   background-color: $PrimLightColor;
   min-height: 70em;
+  padding-top: 30px;
 
   h1{
     padding: 15px;
@@ -77,6 +79,7 @@ body {
   color: $SecDarkColor;
   background-color: $PrimLightColor;
   min-height: 70em;
+  padding-top: 30px;
 
   h1{
     padding: 15px;
@@ -89,6 +92,7 @@ body {
   color: $SecDarkColor;
   background-color: $PrimLightColor;
   min-height: 70em;
+  padding-top: 30px;
 
   h1{
     padding: 15px;
@@ -101,6 +105,7 @@ body {
   color: $SecDarkColor;
   background-color: $PrimLightColor;
   min-height: 70em;
+  padding-top: 30px;
 
   h1{
     padding: 15px;
@@ -113,6 +118,7 @@ body {
   color: $SecDarkColor;
   background-color: $PrimLightColor;
   min-height: 70em;
+  padding-top: 30px;
 
   h1{
     padding: 15px;
@@ -125,6 +131,7 @@ body {
   color: $SecDarkColor;
   background-color: $PrimLightColor;
   min-height: 70em;
+  padding-top: 30px;
 
   h1{
     padding: 15px;
@@ -134,13 +141,49 @@ body {
 
 //__________________ Events
 .events {
-  color: $SecDarkColor;
-  background-color: $PrimLightColor;
   min-height: 70em;
+  padding-top: 30px;
+  max-width: 1350px;
+  margin: auto;
+  text-align: center;
 
   h1{
     padding: 15px;
     margin: 0px;
+  }
+
+  .PostsItems {
+    border-radius: 15px;
+    height: 200px;
+    width: 70%;
+    border-style: solid;
+    padding: 5px;
+    margin: auto;
+    margin-top: 25px;
+
+    p {
+        font-size: 20px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    h3 {
+        margin: 0px;
+        padding: 15px;
+    }
+
+    &:hover {
+      transition: 0.3s ease-in;
+      cursor: pointer;
+    }
+    .picture {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        width: 100%;
+        height: 100px;
+        background-position: left;
+        background-size: cover;
+    }
   }
 }
 
@@ -149,6 +192,7 @@ body {
   color: $SecDarkColor;
   background-color: $PrimLightColor;
   min-height: 70em;
+  padding-top: 30px;
 
   h1{
     padding: 15px;
@@ -161,6 +205,7 @@ body {
   color: $SecDarkColor;
   background-color: $PrimLightColor;
   min-height: 70em;
+  padding-top: 30px;
 
   h1{
     padding: 15px;
@@ -173,22 +218,27 @@ body {
   color: $SecDarkColor;
   background-color: $PrimLightColor;
   min-height: 70em;
+  padding-top: 30px;
 
   h1{
     padding: 15px;
     margin: 0px;
   }
+  a {
+    text-decoration: none;
+    &:hover {
+      filter: opacity(0.7);
+      cursor: pointer;
+      transition-timing-function: ease;
+    }
+  } 
 
   .frame{
     margin: auto;
-    width: 80%;
-    height: 80%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 3%;
+    width: 100%;
+    height: 100%;
     overflow:hidden;
     position:relative;
-    z-index: 1;
   }
 }
 

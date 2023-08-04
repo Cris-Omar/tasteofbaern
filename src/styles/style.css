@@ -41,8 +41,31 @@
   cursor: pointer;
   transition-timing-function: ease;
 }
+.topbar .topbarExtender .topbarWrapper .navbarMenu select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+       appearance: button;
+  outline: none;
+  font-size: 15px;
+}
+.topbar .topbarExtender .topbarWrapper .navbarMenu select option {
+  padding: 10px;
+  color: inherit;
+}
+.topbar .topbarExtender .topbarWrapper .navbarMenu select:hover {
+  filter: opacity(0.7);
+  cursor: pointer;
+  transition-timing-function: ease;
+}
 .topbar .topbarExtender .topbarWrapper .navbarMenu button {
-  margin-right: 50px;
+  margin-right: 20px;
   background: none;
   color: inherit;
   border: none;
@@ -54,6 +77,7 @@
 }
 .topbar .topbarExtender .topbarWrapper .navbarMenu button svg {
   width: 25px;
+  height: 25px;
   cursor: pointer;
 }
 .topbar .topbarExtender .topbarWrapper .navbarMenu button svg:hover {
@@ -183,7 +207,13 @@
 #Dark .topbar .topbarExtender .topbarWrapper {
   background-color: #000000;
 }
-#Dark .topbar .topbarExtender .topbarWrapper button svg {
+#Dark .topbar .topbarExtender .topbarWrapper .navbarMenu select {
+  color: #F7F8F9;
+}
+#Dark .topbar .topbarExtender .topbarWrapper .navbarMenu select option {
+  background-color: #000000;
+}
+#Dark .topbar .topbarExtender .topbarWrapper .navbarMenu button svg {
   fill: yellow;
 }
 #Dark .home {
@@ -197,6 +227,9 @@
 #Dark .events {
   background-color: #161616;
   color: #F7F8F9;
+}
+#Dark .events .PostsItems {
+  border-color: #FF9955;
 }
 #Dark .voucher {
   background-color: #161616;
@@ -281,6 +314,12 @@
 #Light .topbar .topbarExtender .topbarWrapper {
   background-color: #F7F8F9;
 }
+#Light .topbar .topbarExtender .topbarWrapper .navbarMenu select {
+  color: #000000;
+}
+#Light .topbar .topbarExtender .topbarWrapper .navbarMenu select option {
+  background-color: #F7F8F9;
+}
 #Light .home {
   background-color: #FFFDFA;
   color: #000000;
@@ -288,6 +327,9 @@
 #Light .events {
   background-color: #FFFDFA;
   color: #000000;
+}
+#Light .events .PostsItems {
+  border-color: #FF9955;
 }
 #Light .newsletter {
   background-color: #FFFDFA;
@@ -375,6 +417,7 @@ body {
   color: #000000;
   background-color: #FFFDFA;
   min-height: 70em;
+  padding-top: 30px;
 }
 .voucher h1 {
   padding: 15px;
@@ -385,6 +428,7 @@ body {
   color: #000000;
   background-color: #FFFDFA;
   min-height: 70em;
+  padding-top: 30px;
 }
 .team h1 {
   padding: 15px;
@@ -395,6 +439,7 @@ body {
   color: #000000;
   background-color: #FFFDFA;
   min-height: 70em;
+  padding-top: 30px;
 }
 .jobs h1 {
   padding: 15px;
@@ -405,6 +450,7 @@ body {
   color: #000000;
   background-color: #FFFDFA;
   min-height: 70em;
+  padding-top: 30px;
 }
 .openinghours h1 {
   padding: 15px;
@@ -415,6 +461,7 @@ body {
   color: #000000;
   background-color: #FFFDFA;
   min-height: 70em;
+  padding-top: 30px;
 }
 .reservation h1 {
   padding: 15px;
@@ -425,6 +472,7 @@ body {
   color: #000000;
   background-color: #FFFDFA;
   min-height: 70em;
+  padding-top: 30px;
 }
 .newsletter h1 {
   padding: 15px;
@@ -435,6 +483,7 @@ body {
   color: #000000;
   background-color: #FFFDFA;
   min-height: 70em;
+  padding-top: 30px;
 }
 .cuisine h1 {
   padding: 15px;
@@ -442,19 +491,52 @@ body {
 }
 
 .events {
-  color: #000000;
-  background-color: #FFFDFA;
   min-height: 70em;
+  padding-top: 30px;
+  max-width: 1350px;
+  margin: auto;
+  text-align: center;
 }
 .events h1 {
   padding: 15px;
   margin: 0px;
+}
+.events .PostsItems {
+  border-radius: 15px;
+  height: 200px;
+  width: 70%;
+  border-style: solid;
+  padding: 5px;
+  margin: auto;
+  margin-top: 25px;
+}
+.events .PostsItems p {
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+.events .PostsItems h3 {
+  margin: 0px;
+  padding: 15px;
+}
+.events .PostsItems:hover {
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.events .PostsItems .picture {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 100px;
+  background-position: left;
+  background-size: cover;
 }
 
 .jobs {
   color: #000000;
   background-color: #FFFDFA;
   min-height: 70em;
+  padding-top: 30px;
 }
 .jobs h1 {
   padding: 15px;
@@ -465,6 +547,7 @@ body {
   color: #000000;
   background-color: #FFFDFA;
   min-height: 70em;
+  padding-top: 30px;
 }
 .legalnotice h1 {
   padding: 15px;
@@ -475,19 +558,26 @@ body {
   color: #000000;
   background-color: #FFFDFA;
   min-height: 70em;
+  padding-top: 30px;
 }
 .location h1 {
   padding: 15px;
   margin: 0px;
 }
+.location a {
+  text-decoration: none;
+}
+.location a:hover {
+  filter: opacity(0.7);
+  cursor: pointer;
+  transition-timing-function: ease;
+}
 .location .frame {
   margin: auto;
-  width: 80%;
-  height: 80%;
-  border-radius: 3%;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   position: relative;
-  z-index: 1;
 }
 
 .nomatch {

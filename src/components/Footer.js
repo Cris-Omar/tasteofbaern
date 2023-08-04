@@ -28,7 +28,8 @@ export default function Footer() {
         <Link to="/events">Events</Link>
         <Link to="/voucher">Voucher</Link>
         <Link to="/reservation">Reservation</Link>
-        <Link to="/openninghours">opening hours</Link>
+        <Link to="/location">Location</Link>
+        <Link to="/openinghours">opening hours</Link>
         <Link to="/">DE</Link>
       </div>
 
