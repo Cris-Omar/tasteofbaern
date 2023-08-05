@@ -1,10 +1,22 @@
 {
   "Welcome_Message": "Willkommen zu",
+  "Welcome_Text": "wir bringen diverse Streetfoods zu einen Ort, an dem Sie Essen. Trinken. und Chillen.",
+
   "Cuisine": "Küche",
   "Events": "Events",
   "Voucher": "Gutschein",
   "Reservation": "Reservierung",
   "Location": "Standort",
-  "Opening Hours": "Öffnungszeiten"
+  "Opening Hours": "Öffnungszeiten",
+
+  "Contact": "Kontakt",
+  "Legal_Notice": "Rechtlicher Hinweis",
+  "Jobs": "Karriere",
+  "Team": "Team",
+  "Newsletter": "Newsletter",
+
+  "Location_Message": "Wir befinden uns in",
+  "Location_Text": "Öffnen Sie Google Maps, um die beste Route zu uns zu finden:"
+ 
 }
 

@@ -1,9 +1,21 @@
 {
   "Welcome_Message": "Welcome to",
+  "Welcome_Text": "we will bring different streetfoods into one location, where you Eat. Drink. and Chill.",
+
   "Cuisine": "Cuisine",
   "Events": "Events",
   "Voucher": "Voucher",
   "Reservation": "Reservation",
   "Location": "Location",
-  "Opening_Hours": "Opening Hours"
+  "Opening_Hours": "Opening Hours",
+
+  "Contact": "contact",
+  "Legal_Notice": "Legal Notice",
+  "Jobs": "Jobs",
+  "Team": "Team",
+  "Newsletter": "Newsletter",
+
+  "Location_Message": "We are located in",
+  "Location_Text": "Open Google Maps to find the best route to us:"
+
 }

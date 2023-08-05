@@ -19,7 +19,7 @@ export default function Home() {
 
     <h2>{t('Welcome_Message')}</h2>
         {theme === "Light" ? <LogoforLight /> : <LogoforDark /> }
-      <p>we will bring different streetfoods into one location, where you Eat. Drink. and Chill.</p>
+      <p>{t('Welcome_Text')}</p>
         <Gallery />
     </div>
   )

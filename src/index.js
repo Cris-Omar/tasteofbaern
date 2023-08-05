@@ -35,6 +35,5 @@ root.render(
         </ThemeProvider>
       </React.StrictMode>
     </Suspense>
-
 );
 

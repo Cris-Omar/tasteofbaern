@@ -6,34 +6,43 @@ import "../styles/style.css"
 import InstaIcon from "../assets/icons/InstagramIcon"
 import FacebookIcon from '../assets/icons/FacebookIcon'
 import LinkedInIcon from '../assets/icons/LinkedInIcon'
+import { useTranslation } from 'react-i18next'
 
 export default function Footer() {
+
+  const { t } = useTranslation();
 
   return (
 
     <div className='footer'>
-      <div className='socialMedia'>
-        <li><a target="_blank" rel="noreferrer" href='https://www.instagram.com/taste_of_baern/' ><InstaIcon /></a></li>
-        <li><a target="_blank" rel="noreferrer" href='https://www.facebook.com/' ><FacebookIcon /></a></li>
-        <li><a target="_blank" rel="noreferrer" href='https://www.linkedin.com/' ><LinkedInIcon /></a></li>
+      <div className='footerImpresumGroup'>
+        <div className='socialMedia'>
+          <li><a target="_blank" rel="noreferrer" href='https://www.instagram.com/taste_of_baern/' ><InstaIcon /></a></li>
+          <li><a target="_blank" rel="noreferrer" href='https://www.facebook.com/' ><FacebookIcon /></a></li>
+          <li><a target="_blank" rel="noreferrer" href='https://www.linkedin.com/' ><LinkedInIcon /></a></li>
+        </div>
+
+        <div className='impresum1'>
+          <Link to="/contact">{t('Contact')}</Link>
+          <Link to="/legalNotice">{t('Legal_Notice')}</Link>
+          <Link to="/jobs">{t('Jobs')}</Link>
+          <Link to="/team">{t('Team')}</Link>
+          <Link to="/newsletter">{t('Newsletter')}</Link>
+        </div>
+
+        <div className='impresum2'>
+          <Link to="/cuisine">{t('Cuisine')}</Link>
+          <Link to="/events">{t('Events')}</Link>
+          <Link to="/voucher">{t('Voucher')}</Link>
+          <Link to="/reservation">{t('Reservation')}</Link>
+          <Link to="/location">{t('Lcoation')}</Link>
+          <Link to="/openinghours">{t('Opening_Hours')}</Link>
+        </div>
       </div>
 
-      <div className='impresum'>
-        <Link to="/contact">Contact</Link>
-        <Link to="/legalNotice">Legal notice</Link>
-        <Link to="/jobs">Jobs</Link>
-        <Link to="/team">Team</Link>
-        <Link to="/newsletter">Newsletter</Link>
-        <Link to="/cuisine">Cuisine</Link>
-        <Link to="/events">Events</Link>
-        <Link to="/voucher">Voucher</Link>
-        <Link to="/reservation">Reservation</Link>
-        <Link to="/location">Location</Link>
-        <Link to="/openinghours">opening hours</Link>
-        <Link to="/">DE</Link>
+      <div className='copyright'>
+        <p>Taste of Bärn &copy; 2023</p>
       </div>
-
-      <p>Taste of Bärn &copy; 2023</p>
     </div>
   )
 }

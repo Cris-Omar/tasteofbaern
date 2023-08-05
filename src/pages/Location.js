@@ -1,12 +1,15 @@
 import "../styles/style.css"
-import { Link } from "react-router-dom" 
+import { Link } from "react-router-dom"
+import { useTranslation } from "react-i18next"
 
 export default function Location(){
+
+  const { t } = useTranslation();
 
   return(
     <div className="location">
 
-      <h3>We are located in </h3>
+      <h3>{t('Location_Message')}</h3>
       <Link  to="https://www.google.com/maps/place/Humboldtstrasse+10,+3013+Bern/@46.9529987,7.4539296,17" target="_blank">humboldtstrasse 10, 3013 Bern</Link>
 
       <div className="frame">
@@ -20,9 +23,8 @@ export default function Location(){
         >
        </iframe>
       </div>
-
-      <p>Open Google Maps to find the best route to us:</p> 
-      <Link to="https://www.google.com/maps/place/Humboldtstrasse+10,+3013+Bern/@46.9529987,7.4539296,17" target="_blank">Open Google Maps</Link>
+      <p>{t('Location_Text')}</p>
+      <Link to="https://www.google.com/maps/place/Humboldtstrasse+10,+3013+Bern/@46.9529987,7.4539296,17" target="_blank">Google Maps</Link>
     </div>
   )
 }

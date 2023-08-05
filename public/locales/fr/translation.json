@@ -1,9 +1,21 @@
 {
   "Welcome_Message": "bienvenue a",
+  "Welcome_Text": "nous rassemblerons différents plats de streetfood en un seul lieu, où vous pourrez manger. boire. relax.",
+
   "Cuisine": "Cuisine",
   "Events": "Evénements",
   "Voucher": "Voucher",
   "Reservation": "Réservation",
   "Location": "Localisation",
-  "Opening_Hours": "Horaires d'ouverture"
+  "Opening_Hours": "Horaires d'ouverture",
+
+  "Contact": "contact",
+  "Legal_Notice": "Avis juridique",
+  "Jobs": "Emplois",
+  "Team": "L'équipe",
+  "Newsletter": "Newsletter",
+
+  "Location_Message": "Nous sommes situés à",
+  "Location_Text": "Ouvrez Google Maps pour trouver le meilleur itinéraire:"
+
 }

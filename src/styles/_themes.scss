@@ -97,30 +97,43 @@
   
   .footer{
     background-color: $SecDarkColor;
-    p {
-      color: $SecLightColor;
-    }
-    .socialMedia {
-      li{
-        &:hover {
-          background-color: $ColorOnHover;
-        }
+    .footerImpresumGroup {
 
-        svg {
-          fill: $SecLightColor;
+
+      .socialMedia {
+        li{
           &:hover {
-            fill: $SecDarkColor;
+            background-color: $ColorOnHover;
+          }
+
+          svg {
+            fill: $SecLightColor;
+            &:hover {
+              fill: $SecDarkColor;
+            }
+          }
+        }
+      }
+      .impresum1 {
+        a {
+          &:hover{
+            color: $SecDarkColor;
+            background-color: $ColorOnHover;
+          }
+        }
+      }  
+      .impresum2 {
+        a {
+          &:hover{
+            color: $SecDarkColor;
+            background-color: $ColorOnHover;
           }
         }
       }
     }
-    .impresum {
-      a {
-        &:hover{
-          color: $SecDarkColor;
-          background-color: $ColorOnHover;
-        }
-      }
+    .copyright {
+      color: $SecLightColor;
+      background-color: $PrimDarkColor;
     }
   }
 
@@ -223,6 +236,7 @@
   }
 
   .footer{
+    background-color: $SecLightColor;
     .socialMedia {
       background-color: $SecLightColor;
       li{
@@ -245,6 +259,10 @@
           background-color: $ColorOnHover;
         }
       }
+    }
+    .copyright {
+      color: $SecLightColor;
+      background-color: $PrimLightColor;
     }
   }
 
