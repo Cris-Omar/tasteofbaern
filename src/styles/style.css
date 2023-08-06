@@ -678,8 +678,11 @@
 #Dark .team img {
   border-color: #FF9955;
 }
+#Dark .team a svg {
+  stroke: #F7F8F9;
+}
 #Dark .team a svg:hover {
-  fill: #FF9955;
+  stroke: #FF9955;
 }
 #Dark .voucher {
   background-color: #161616;
@@ -790,8 +793,11 @@
 #Light .team img {
   border-color: #FF9955;
 }
-#Light .team a:hover {
-  color: #FF9955;
+#Light .team a svg {
+  stroke: black;
+}
+#Light .team a svg:hover {
+  stroke: #FF9955;
 }
 #Light .voucher {
   background-color: #FFFDFA;

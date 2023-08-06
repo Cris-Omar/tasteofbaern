@@ -2,8 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "../../styles/style.css"
 import { useTranslation } from "react-i18next"
-import MailforLight from "../../assets/icons/MailforLight"
-import MailforDark from "../../assets/icons/MailforDark"
+import Mail from "../../assets/icons/Mail"
 import { useThemeContext } from "../../components/context/ThemeContext"
 
 export default function Team(){
@@ -20,7 +19,7 @@ export default function Team(){
           <p>{t('Team_Name')}: Mathias Schnider</p>
           <p>{t('Team_Position')}: CEO</p>
           <Link to="mailto:mathias.schnider@tasteofbaern.ch">
-            {theme === "Light" ? <MailforLight /> : <MailforDark /> }
+            <Mail />
           </Link>
         </div>
       </div>
@@ -31,7 +30,7 @@ export default function Team(){
           <p>{t('Team_Name')}: Cristian Hernandez</p>
           <p>{t('Team_Position')}: CEO</p>
           <Link to="mailto:cristian.hernandez@tasteofbaern.ch">
-           {theme === "Light" ? <MailforLight /> : <MailforDark /> }
+            <Mail />
           </Link>
         </div>
       </div>
