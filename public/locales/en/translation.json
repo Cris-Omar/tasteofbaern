@@ -2,6 +2,14 @@
   "Welcome_Message": "Welcome to",
   "Welcome_Text": "we will bring different streetfoods into one location, where you Eat. Drink. and Chill.",
 
+  "contact_us": "contact us!",
+  "contact_us_text": "if you have a question or input, write us!",
+  "name": "name",
+  "mail": "mail",
+  "message": "message",
+  "upload_file": "upload file",
+  "send": "send",
+
   "Cuisine": "Cuisine",
   "Events": "Events",
   "Voucher": "Voucher",

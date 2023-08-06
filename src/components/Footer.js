@@ -19,7 +19,6 @@ export default function Footer() {
         <div className='socialMedia'>
           <li><a target="_blank" rel="noreferrer" href='https://www.instagram.com/taste_of_baern/' ><InstaIcon /></a></li>
           <li><a target="_blank" rel="noreferrer" href='https://www.facebook.com/' ><FacebookIcon /></a></li>
-          <li><a target="_blank" rel="noreferrer" href='https://www.linkedin.com/' ><LinkedInIcon /></a></li>
         </div>
 
         <div className='impresum1'>

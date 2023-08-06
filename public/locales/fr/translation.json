@@ -2,6 +2,14 @@
   "Welcome_Message": "bienvenue a",
   "Welcome_Text": "nous rassemblerons différents plats de streetfood en un seul lieu, où vous pourrez manger. boire. relax.",
 
+  "contact_us": "Contactez-nous!",
+  "contact_us_text": "écrivez-nous si vous avez une question ou une suggestion!",
+  "name": "Nom",
+  "mail": "Email",
+  "message": "Message",
+  "upload_file": "Télécharger un fichier",
+  "send": "Envoyer",
+
   "Cuisine": "Cuisine",
   "Events": "Evénements",
   "Voucher": "Voucher",
