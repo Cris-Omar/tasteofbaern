@@ -53,12 +53,12 @@ export default function NavBar() {
             
           </div>
           <div className="navbarMenu">
-            <Link to="/cuisine">{t("Cuisine")}</Link>
+            <Link to="/offer">{t("Offer")}</Link>
             <Link to="/events">{t("Events")}</Link>
             <Link to="/voucher">{t("Voucher")}</Link>
             <Link to="/reservation">{t("Reservation")}</Link>
             <Link to="/location">{t("Location")}</Link>
-            <Link to="/openinghours">{t("Opening Hours")}</Link>
+            <Link to="/openinghours">{t("Opening_Hours")}</Link>
 
             <select defaultValue={selectedLanguage} onChange={chooseLanguage}>  
               <option value="en" >EN</option>

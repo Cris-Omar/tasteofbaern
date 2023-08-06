@@ -10,7 +10,12 @@
   "upload_file": "upload file",
   "send": "send",
 
-  "Cuisine": "Cuisine",
+  "Team_Member":"Team members",
+  "Team_Name":"name",
+  "Team_Position":"position",
+  "Team_Contact":"contact",
+
+  "Offer": "Offer",
   "Events": "Events",
   "Voucher": "Voucher",
   "Reservation": "Reservation",

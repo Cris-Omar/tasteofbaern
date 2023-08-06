@@ -10,7 +10,12 @@
   "upload_file": "Subir fichero",
   "send": "enviar",
 
-  "Cuisine": "Cosina",
+  "Team_Member":"Miembros de Nuestro equipo",
+  "Team_Name":"Nombre",
+  "Team_Position":"Posición",
+  "Team_Contact":"Contacto",
+
+  "Offer": "ofertas",
   "Events": "Eventos",
   "Voucher": "Cupón",
   "Reservation": "Reservacion",

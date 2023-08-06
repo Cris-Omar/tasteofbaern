@@ -3,11 +3,10 @@
   color: $SecLightColor;
   
   p{color: $SecLightColor;}
-  a {color: $SecLightColor;}
+  a{color: $SecLightColor;}
   h2 {color: $SecLightColor;}
   h3 {color:$SecLightColor;}
   label{color: $SecLightColor;}
-  svg{fill: $SecLightColor;}
 
   .topbar{
     a{
@@ -48,7 +47,7 @@
     background-color: $PrimDarkColor;
     color: $SecLightColor;
     .PostsItems {
-      border-color: #FF9955;
+      border-color: $ColorOnHover;
     }
   }
 
@@ -70,6 +69,17 @@
   .team {
     background-color: $PrimDarkColor;
     color: $SecLightColor;
+    img {
+      border-color: $ColorOnHover;
+    }
+
+    a {
+      svg{
+        &:hover {
+          fill: $ColorOnHover;
+        }
+      }
+    }
   }
 
   .voucher {
@@ -83,6 +93,11 @@
   }
 
   .location {
+    background-color: $PrimDarkColor;
+    color: $SecLightColor;
+  }
+
+  .jobs {
     background-color: $PrimDarkColor;
     color: $SecLightColor;
   }
@@ -157,7 +172,6 @@
   a{color: $SecDarkColor;}
   h2{color: $SecDarkColor;}
   label{color: $SecDarkColor;}
-  svg{fill: $SecDarkColor;}
 
   .topbar{
     a{
@@ -188,7 +202,7 @@
     background-color: $PrimLightColor;
     color: $SecDarkColor;
     .PostsItems {
-      border-color: #FF9955;
+      border-color: $ColorOnHover;
     }
   }
 
@@ -210,6 +224,15 @@
   .team {
     background-color: $PrimLightColor;
     color: $SecDarkColor;
+  
+    img {
+      border-color: $ColorOnHover;
+    }
+    a {
+      &:hover {
+        color: $ColorOnHover;
+      }
+    }
   }
 
   .voucher {
@@ -223,6 +246,11 @@
   }
 
   .location {
+    background-color: $PrimLightColor;
+    color: $SecDarkColor;
+  }
+
+  .jobs {
     background-color: $PrimLightColor;
     color: $SecDarkColor;
   }

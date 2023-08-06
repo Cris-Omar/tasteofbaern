@@ -1,12 +1,12 @@
 //variables
-$PrimLightColor:#FFFDFA;
-$SecLightColor:#F7F8F9;
-$ColorOnHover: grey;
-$PrimDarkColor : #161616;
-$SecDarkColor : #000000;
+$PrimLightColor:#FFFDFA !default;
+$SecLightColor:#F7F8F9 !default;
+$ColorOnHover: #FF9955 !default;
+$PrimDarkColor : #161616 !default;
+$SecDarkColor : #000000 !default;
 
 //import extern style Files
-@import "~react-image-gallery/styles/css/image-gallery.css";
+@import "./image-gallery";
 @import "./navbar";
 @import "./footer";
 @import "./Themes";
@@ -51,8 +51,6 @@ body {
 
 //__________________ Voucher
 .voucher {
-  color: $SecDarkColor;
-  background-color: $PrimLightColor;
   min-height: 70em;
   padding-top: 30px;
 
@@ -64,21 +62,44 @@ body {
 
 //__________________ Team
 .team {
-  color: $SecDarkColor;
-  background-color: $PrimLightColor;
+  max-width: 800px;
   min-height: 70em;
   padding-top: 30px;
+  margin: auto;
 
   h1{
     padding: 15px;
     margin: 0px;
   }
+
+  .teamMember {
+    padding: 25px;
+
+    img {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      border-style: solid;
+      border-color: #FF9955;
+    }
+    .memberInfo {
+      a {
+        text-decoration: none;
+        width: fit-content;
+        margin: auto;
+        svg{
+          width: 35px;
+          &:hover {
+            transition-timing-function: ease;
+          }
+        }
+      }
+    }
+  }
 }
 
 //__________________ Jobs
 .jobs {
-  color: $SecDarkColor;
-  background-color: $PrimLightColor;
   min-height: 70em;
   padding-top: 30px;
 
@@ -90,8 +111,6 @@ body {
 
 //__________________ OpeningHours
 .openinghours {
-  color: $SecDarkColor;
-  background-color: $PrimLightColor;
   min-height: 70em;
   padding-top: 30px;
 
@@ -103,8 +122,6 @@ body {
 
 //__________________ Reservation
 .reservation {
-  color: $SecDarkColor;
-  background-color: $PrimLightColor;
   min-height: 70em;
   padding-top: 30px;
 
@@ -116,8 +133,6 @@ body {
 
 //__________________ Newsletter
 .newsletter {
-  color: $SecDarkColor;
-  background-color: $PrimLightColor;
   min-height: 70em;
   padding-top: 30px;
 
@@ -129,8 +144,6 @@ body {
 
 //__________________ Cuisine
 .cuisine {
-  color: $SecDarkColor;
-  background-color: $PrimLightColor;
   min-height: 70em;
   padding-top: 30px;
 
@@ -188,23 +201,8 @@ body {
   }
 }
 
-//__________________ Jobs
-.jobs {
-  color: $SecDarkColor;
-  background-color: $PrimLightColor;
-  min-height: 70em;
-  padding-top: 30px;
-
-  h1{
-    padding: 15px;
-    margin: 0px;
-  }
-}
-
 //__________________ LegalNotice
 .legalnotice {
-  color: $SecDarkColor;
-  background-color: $PrimLightColor;
   min-height: 70em;
   padding-top: 30px;
 
@@ -216,8 +214,6 @@ body {
 
 //__________________ Location
 .location {
-  color: $SecDarkColor;
-  background-color: $PrimLightColor;
   min-height: 70em;
   padding-top: 30px;
 
@@ -245,8 +241,6 @@ body {
 
 //__________________ NoMatch
 .nomatch {
-  color: $SecDarkColor;
-  background-color: $PrimLightColor;
   min-height: 70em;
 
   h1 {
@@ -261,8 +255,6 @@ body {
 
 //__________________ Contact
 .contact {
-  color: $SecDarkColor;
-  background-color: $PrimLightColor;
   min-height: 70em;
 
   h1{

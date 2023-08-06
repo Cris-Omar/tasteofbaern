@@ -10,12 +10,17 @@
   "upload_file": "Datei hochladen",
   "send": "Senden",
 
-  "Cuisine": "Küche",
+  "Team_Member":"Team Mitglieder",
+  "Team_Name":"Name",
+  "Team_Position":"Position",
+  "Team_Contact":"Kontakt",
+
+  "Offer": "Angebot",
   "Events": "Events",
   "Voucher": "Gutschein",
   "Reservation": "Reservierung",
   "Location": "Standort",
-  "Opening Hours": "Öffnungszeiten",
+  "Opening_Hours": "Öffnungszeiten",
 
   "Contact": "Kontakt",
   "Legal_Notice": "Rechtlicher Hinweis",

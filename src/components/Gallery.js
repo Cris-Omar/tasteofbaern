@@ -33,6 +33,8 @@ export default function Gallery() {
       items={images}
       autoPlay={true}
       showThumbnails={false}
+      showBullets={true}
+      
       />
     </div>
   )

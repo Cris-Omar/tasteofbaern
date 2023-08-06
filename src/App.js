@@ -25,6 +25,7 @@ function App() {
   //variable for the use of the Theme Context
   const { theme } = useThemeContext ()
 
+
   return (
   
   <Router >
