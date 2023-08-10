@@ -36,11 +36,13 @@ export default function NavBar() {
     localStorage.setItem("lang", e.target.value);
 }
 
-  const [locOpen, setLocOpen] = useState(false)
-  const handleLocOpen = () =>  {setLocOpen(!locOpen)}
   //Mobile Open & close menuIcon
   const [menuClick, setMenuClick] = useState(false)
   const handleMenuClick = () => setMenuClick(!click)
+
+  const [locOpen, setLocOpen] = useState(false)
+  const handleLocOpen = () =>  {setLocOpen(!locOpen)}
+
   //Mobile dropdown handle Open
   const [mobOpen, setMobOpen] = useState(false)
   const handleMobOpen = () => {setMobOpen(!mobOpen)}
@@ -50,63 +52,73 @@ export default function NavBar() {
 
   return (
     <div className='topbar' >
-      <div className="topbarExtender">
-        <div className='topbarWrapper'>
-          <div className='logo'> 
+      <div className="navbarMenu">
+        <div className='logo'> 
+            {theme === "Light" ? (
+                <Link to="/"><LogoforLight /></Link>
+              ) : (
+                <Link to="/"><LogoforDark /></Link>
+              )}
+        </div>
+        <div className="options">
+          <Link to="/offer">{t("Offer")}</Link>
+          <Link to="/events">{t("Events")}</Link>
+          {/*<Link to="/voucher">{t("Voucher")}</Link> */}
+          <Link to="/reservation">{t("Reservation")}</Link>
+          <Link to="/location">{t("Location")}</Link>
+          <Link to="/openinghours">{t("Opening_Hours")}</Link>
+
+          <select defaultValue={selectedLanguage} onChange={chooseLanguage}>  
+            <option value="en" >EN</option>
+            <option value="de">DE</option>
+            <option value="fr">FR</option>
+            <option value="es">ES</option>
+          </select>
+
+          <button onClick={handleClick}>
+            {theme === "Light" ? <Moon /> : <Sun />}
+          </button>
+        </div>
+      </div>
+
+      {/*small screen Navigation Menu starts here */}
+      <div className="mobNavbarMenu">
+        <div className='logo'> 
           {theme === "Light" ? (
               <Link to="/"><LogoforLight /></Link>
             ) : (
               <Link to="/"><LogoforDark /></Link>
             )}
-            
-          </div>
-          <div className="navbarMenu">
-            <Link to="/offer">{t("Offer")}</Link>
-            <Link to="/events">{t("Events")}</Link>
-            {/*<Link to="/voucher">{t("Voucher")}</Link> */}
-            <Link to="/reservation">{t("Reservation")}</Link>
-            <Link to="/location">{t("Location")}</Link>
-            <Link to="/openinghours">{t("Opening_Hours")}</Link>
-
-            <select defaultValue={selectedLanguage} onChange={chooseLanguage}>  
-              <option value="en" >EN</option>
-              <option value="de">DE</option>
-              <option value="fr">FR</option>
-              <option value="es">ES</option>
-            </select>
-
-            <button onClick={handleMenuClick}>
-              {theme === "Light" ? <Moon /> : <Sun />}
-            </button>
-          </div>
-          <div className="mobNavbarMenu" onClick= {() => {handleMenuClick(); handleMobOpen();}}>
-            {click ? <MenuBurger /> : <MenuXmark />}
-
-            {mobOpen && (
-              <div className='mobSubMenu'>
-
-                <div className='mobMenuItem' onMouseEnter={handleMobLocOpen} onMouseLeave={handleMobLocOpen}>
-                  <Link to="/standorte" >Standorte</Link>
-                  {locOpen && (
-                    <div className='mobMenuContent'>
-                    <Link to="/offer">{t("Offer")}</Link>
-                    <Link to="/events">{t("Events")}</Link>
-                    {/*<Link to="/voucher">{t("Voucher")}</Link> */}
-                    <Link to="/reservation">{t("Reservation")}</Link>
-                    <Link to="/location">{t("Location")}</Link>
-                    <Link to="/openinghours">{t("Opening_Hours")}</Link>
-                    </div>
-                  )}
-                </div>
-              </div>
-              )}
-
-            <button onClick={handleClick}>
-              {theme === "Light" ? <Moon /> : <Sun />}
-            </button>
-          </div>
         </div>
+
+        <div className="openCloseIcon" onClick= {() => {handleMenuClick(); handleMobOpen();}} >
+          {menuClick ? <MenuBurger /> : <MenuXmark />}
+          {mobOpen && (
+            <div className='mobSubMenu'>
+
+              <li><Link to="/standorte" >{t("Standorte")}</Link></li>
+              <li><Link to="/offer">{t("Offer")}</Link></li>
+              <li><Link to="/events">{t("Events")}</Link></li>
+              {/*<li><Link to="/voucher">{t("Voucher")}</Link></li> */}
+              <li><Link to="/reservation">{t("Reservation")}</Link></li>
+              <li><Link to="/location">{t("Location")}</Link></li>
+              <li><Link to="/openinghours">{t("Opening_Hours")}</Link></li>
+              
+              <select defaultValue={selectedLanguage} onChange={chooseLanguage}>  
+                <option value="en" >EN</option>
+                <option value="de">DE</option>
+                <option value="fr">FR</option>
+                <option value="es">ES</option>
+              </select>
+
+              <button onClick={handleClick}>
+                {theme === "Light" ? <Moon /> : <Sun />}
+              </button>
+            </div>
+            )}
+          </div>
       </div>
+      {/*small screen Navigation Menu starts here */}
     </div>
   )
 }

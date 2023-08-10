@@ -1,127 +1,254 @@
 .topbar {
-  .topbarExtender {
-    width: 100%;
-    .topbarWrapper {
-      margin: auto;
+  width: 100%;
+  max-width: 1260px;
+  margin: auto;
+  .navbarMenu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
       display: flex;
-      max-width: 1260px;
-      flex-direction: row;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      justify-content: space-between;
+      align-items: flex-start;
+      svg{
+        width: 250px;
+        height: 60px;
+        &:hover {
+          filter: opacity(0.7);
+          cursor: pointer;
+          transition-timing-function: ease;
+        }
+      }
+    }
+    .options {
+      display: flex;
       align-items: center;
+      a{
+        padding-right: 30px;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+          filter: opacity(0.7);
+          cursor: pointer;
+          transition-timing-function: ease;
+        }
+      }
+      select {
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        -webkit-appearance: button;
+        appearance: button;
+        outline: none;
+        font-size: 15px;
+        
+        option {
+          padding: 10px;
+          color: inherit;
+        }&:hover {
+          filter: opacity(0.7);
+          cursor: pointer;
+          transition-timing-function: ease;
+        }
+      }
+  
+      button{
+        margin-right: 20px;
+        background: none;
+        color: inherit;
+        border: none;
+        border-radius: 5px;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit; 
+    
+        svg {
+          width: 25px;
+          height: 25px;
+          cursor: pointer;
+          &:hover {
+            filter: opacity(0.7);
+            cursor: pointer;
+            transition-timing-function: ease;
+          }
+        }
+      }
+    }
+  }
+
+  .mobNavbarMenu {
+    display: none;
+  }
+}
+
+ //Laptops
+ @media screen and (max-width: 1024px) {
+  .topbar {        
+    .navbarMenu {
+      display: none;
+    }
+
+    .mobNavbarMenu {
+      display: flex;
+      flex-direction: column;
+
       .logo {
-        padding-left: 50px;
+        display: flex;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
         svg{
           width: 250px;
           height: 60px;
-          &:hover {
-            filter: opacity(0.7);
-            cursor: pointer;
-            transition-timing-function: ease;
-          }
         }
       }
-  
-      .navbarMenu {
-        flex: 50%;
-        height: 100%;
+
+      .openCloseIcon {
         display: flex;
-        align-items: center;
-        justify-content: right;
-        a{
-          padding-right: 30px;
-          text-decoration: none;
-          font-weight: bold;
-          &:hover {
-            filter: opacity(0.7);
-            cursor: pointer;
-            transition-timing-function: ease;
-          }
+        margin: auto;
+        svg {
+          margin: auto;
+          width: 30px;
+          height: 30px;
         }
 
-        select {
-          appearance: none;
-          background-color: transparent;
-          border: none;
-          cursor: pointer;
-          font-weight: bold;
-          -webkit-appearance: button;
-          appearance: button;
-          outline: none;
-          font-size: 15px;
-          
-          option {
-            padding: 10px;
-            color: inherit;
-          }&:hover {
-            filter: opacity(0.7);
-            cursor: pointer;
-            transition-timing-function: ease;
-          }
-        } 
-
-        button{
-          margin-right: 20px;
-          background: none;
-          color: inherit;
-          border: none;
-          border-radius: 5px;
-          padding: 0;
-          font: inherit;
-          cursor: pointer;
-          outline: inherit; 
-      
-          svg {
-            width: 25px;
-            height: 25px;
-            cursor: pointer;
-            &:hover {
-              filter: opacity(0.7);
+        .mobSubMenu {
+          list-style-type: none;
+          flex-direction: column;
+          position: relative;
+          background-color: #6C2B3B;
+          font-size: 16px;
+            li{
+              padding: 15px;
+              margin: 10px;
+              a{
+                text-decoration: none;
+              }
+            }
+            select {
+              display: inline-block;
+              appearance: none;
+              background-color: transparent;
+              border: none;
               cursor: pointer;
-              transition-timing-function: ease;
+              font-weight: bold;
+              -webkit-appearance: button;
+              appearance: button;
+              outline: none;
+              
+              option {
+                padding: 10px;
+                color: inherit;
+              }
+            }
+            button{
+              margin-right: 20px;
+              background: none;
+              color: inherit;
+              border: none;
+              border-radius: 5px;
+              padding: 0;
+              font: inherit;
+              cursor: pointer;
+              outline: inherit; 
+          
+              svg {
+                width: 25px;
+                height: 25px;
+              }
             }
           }
-        }
-      }
-
-      .mobNavbarMenu {
-        display: none;
       }
     }
   }
+}
 
-  //Laptops
-  @media screen and (max-width: 1024px) {
 
-    .topbarExtender {
-      width: 100%;
-      .topbarWrapper {
+//phone screen
+@media screen and (max-width: 478px) {
+  .topbar {        
+    .navbarMenu {
+      display: none;
+    }
+
+    .mobNavbarMenu {
+      display: flex;
+      flex-direction: column;
+
+      .logo {
+        display: flex;
+        margin: auto;
         padding-top: 10px;
         padding-bottom: 10px;
-        .logo {
-          margin: auto;
-        }
-    
-        .navbarMenu {
-          display: none;
-        }
-
-        .mobNavbarMenu {
-          display: block;
-
-          .mobSubMenu {
-            .mobMenuItem {
-              display: block;
-            }
-          }
+        svg{
+          width: 250px;
+          height: 60px;
         }
       }
+
+      .openCloseIcon {
+        display: flex;
+        margin: auto;
+        svg {
+          margin: auto;
+          width: 30px;
+          height: 30px;
+        }
+
+        .mobSubMenu {
+          list-style-type: none;
+          flex-direction: column;
+          position: relative;
+          background-color: #6C2B3B;
+          font-size: 16px;
+            li{
+              padding: 15px;
+              margin: 10px;
+              a{
+                text-decoration: none;
+              }
+            }
+            select {
+              display: inline-block;
+              appearance: none;
+              background-color: transparent;
+              border: none;
+              cursor: pointer;
+              font-weight: bold;
+              -webkit-appearance: button;
+              appearance: button;
+              outline: none;
+              
+              option {
+                padding: 10px;
+                color: inherit;
+              }
+            }
+            button{
+              margin-right: 20px;
+              background: none;
+              color: inherit;
+              border: none;
+              border-radius: 5px;
+              padding: 0;
+              font: inherit;
+              cursor: pointer;
+              outline: inherit; 
+          
+              svg {
+                width: 25px;
+                height: 25px;
+              }
+            }
+          }
+      }
     }
-  }
-  
-  //phone screen
-  @media screen and (max-width: 478px) {
-    display: none;
   }
 }

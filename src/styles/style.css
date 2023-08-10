@@ -412,49 +412,47 @@
   }
 }
 
-.topbar .topbarExtender {
+.topbar {
   width: 100%;
-}
-.topbar .topbarExtender .topbarWrapper {
-  margin: auto;
-  display: flex;
   max-width: 1260px;
-  flex-direction: row;
+  margin: auto;
+}
+.topbar .navbarMenu {
   padding-top: 10px;
   padding-bottom: 10px;
-  justify-content: space-between;
+  height: 100%;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-.topbar .topbarExtender .topbarWrapper .logo {
-  padding-left: 50px;
+.topbar .navbarMenu .logo {
+  display: flex;
+  align-items: flex-start;
 }
-.topbar .topbarExtender .topbarWrapper .logo svg {
+.topbar .navbarMenu .logo svg {
   width: 250px;
   height: 60px;
 }
-.topbar .topbarExtender .topbarWrapper .logo svg:hover {
+.topbar .navbarMenu .logo svg:hover {
   filter: opacity(0.7);
   cursor: pointer;
   transition-timing-function: ease;
 }
-.topbar .topbarExtender .topbarWrapper .navbarMenu {
-  flex: 50%;
-  height: 100%;
+.topbar .navbarMenu .options {
   display: flex;
   align-items: center;
-  justify-content: right;
 }
-.topbar .topbarExtender .topbarWrapper .navbarMenu a {
+.topbar .navbarMenu .options a {
   padding-right: 30px;
   text-decoration: none;
   font-weight: bold;
 }
-.topbar .topbarExtender .topbarWrapper .navbarMenu a:hover {
+.topbar .navbarMenu .options a:hover {
   filter: opacity(0.7);
   cursor: pointer;
   transition-timing-function: ease;
 }
-.topbar .topbarExtender .topbarWrapper .navbarMenu select {
+.topbar .navbarMenu .options select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -468,16 +466,16 @@
   outline: none;
   font-size: 15px;
 }
-.topbar .topbarExtender .topbarWrapper .navbarMenu select option {
+.topbar .navbarMenu .options select option {
   padding: 10px;
   color: inherit;
 }
-.topbar .topbarExtender .topbarWrapper .navbarMenu select:hover {
+.topbar .navbarMenu .options select:hover {
   filter: opacity(0.7);
   cursor: pointer;
   transition-timing-function: ease;
 }
-.topbar .topbarExtender .topbarWrapper .navbarMenu button {
+.topbar .navbarMenu .options button {
   margin-right: 20px;
   background: none;
   color: inherit;
@@ -488,46 +486,170 @@
   cursor: pointer;
   outline: inherit;
 }
-.topbar .topbarExtender .topbarWrapper .navbarMenu button svg {
+.topbar .navbarMenu .options button svg {
   width: 25px;
   height: 25px;
   cursor: pointer;
 }
-.topbar .topbarExtender .topbarWrapper .navbarMenu button svg:hover {
+.topbar .navbarMenu .options button svg:hover {
   filter: opacity(0.7);
   cursor: pointer;
   transition-timing-function: ease;
 }
-.topbar .topbarExtender .topbarWrapper .mobNavbarMenu {
+.topbar .mobNavbarMenu {
   display: none;
 }
+
 @media screen and (max-width: 1024px) {
-  .topbar .topbarExtender {
-    width: 100%;
+  .topbar .navbarMenu {
+    display: none;
   }
-  .topbar .topbarExtender .topbarWrapper {
+  .topbar .mobNavbarMenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .topbar .mobNavbarMenu .logo {
+    display: flex;
+    margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .topbar .topbarExtender .topbarWrapper .logo {
+  .topbar .mobNavbarMenu .logo svg {
+    width: 250px;
+    height: 60px;
+  }
+  .topbar .mobNavbarMenu .openCloseIcon {
+    display: flex;
     margin: auto;
   }
-  .topbar .topbarExtender .topbarWrapper .navbarMenu {
-    display: none;
+  .topbar .mobNavbarMenu .openCloseIcon svg {
+    margin: auto;
+    width: 30px;
+    height: 30px;
   }
-  .topbar .topbarExtender .topbarWrapper .mobNavbarMenu {
-    display: block;
+  .topbar .mobNavbarMenu .openCloseIcon .mobSubMenu {
+    list-style-type: none;
+    flex-direction: column;
+    position: relative;
+    background-color: #6C2B3B;
+    font-size: 16px;
   }
-  .topbar .topbarExtender .topbarWrapper .mobNavbarMenu .mobSubMenu .mobMenuItem {
-    display: block;
+  .topbar .mobNavbarMenu .openCloseIcon .mobSubMenu li {
+    padding: 15px;
+    margin: 10px;
+  }
+  .topbar .mobNavbarMenu .openCloseIcon .mobSubMenu li a {
+    text-decoration: none;
+  }
+  .topbar .mobNavbarMenu .openCloseIcon .mobSubMenu select {
+    display: inline-block;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+         appearance: button;
+    outline: none;
+  }
+  .topbar .mobNavbarMenu .openCloseIcon .mobSubMenu select option {
+    padding: 10px;
+    color: inherit;
+  }
+  .topbar .mobNavbarMenu .openCloseIcon .mobSubMenu button {
+    margin-right: 20px;
+    background: none;
+    color: inherit;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .topbar .mobNavbarMenu .openCloseIcon .mobSubMenu button svg {
+    width: 25px;
+    height: 25px;
   }
 }
 @media screen and (max-width: 478px) {
-  .topbar {
+  .topbar .navbarMenu {
     display: none;
   }
+  .topbar .mobNavbarMenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .topbar .mobNavbarMenu .logo {
+    display: flex;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .topbar .mobNavbarMenu .logo svg {
+    width: 250px;
+    height: 60px;
+  }
+  .topbar .mobNavbarMenu .openCloseIcon {
+    display: flex;
+    margin: auto;
+  }
+  .topbar .mobNavbarMenu .openCloseIcon svg {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+  }
+  .topbar .mobNavbarMenu .openCloseIcon .mobSubMenu {
+    list-style-type: none;
+    flex-direction: column;
+    position: relative;
+    background-color: #6C2B3B;
+    font-size: 16px;
+  }
+  .topbar .mobNavbarMenu .openCloseIcon .mobSubMenu li {
+    padding: 15px;
+    margin: 10px;
+  }
+  .topbar .mobNavbarMenu .openCloseIcon .mobSubMenu li a {
+    text-decoration: none;
+  }
+  .topbar .mobNavbarMenu .openCloseIcon .mobSubMenu select {
+    display: inline-block;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+         appearance: button;
+    outline: none;
+  }
+  .topbar .mobNavbarMenu .openCloseIcon .mobSubMenu select option {
+    padding: 10px;
+    color: inherit;
+  }
+  .topbar .mobNavbarMenu .openCloseIcon .mobSubMenu button {
+    margin-right: 20px;
+    background: none;
+    color: inherit;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .topbar .mobNavbarMenu .openCloseIcon .mobSubMenu button svg {
+    width: 25px;
+    height: 25px;
+  }
 }
-
 .footer {
   min-height: 250px;
   padding-top: 50px;
@@ -605,9 +727,110 @@
   padding: 10px;
 }
 
+@media screen and (max-width: 1024px) {
+  .footer {
+    min-height: 250px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footerImpresumGroup {
+    width: 700px;
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 30px;
+    margin: auto;
+    justify-content: space-between;
+  }
+  .footer .footerImpresumGroup .socialMedia {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footerImpresumGroup .socialMedia li {
+    list-style: none;
+    margin: 7px;
+    border-radius: 50%;
+  }
+  .footer .footerImpresumGroup .socialMedia li svg {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  .footer .footerImpresumGroup .impresum1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footerImpresumGroup .impresum1 a {
+    padding: 10px;
+    text-decoration: none;
+    float: right;
+  }
+  .footer .footerImpresumGroup .impresum2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footerImpresumGroup .impresum2 a {
+    padding: 10px;
+    text-decoration: none;
+    float: right;
+  }
+  .footer .copyright p {
+    font-size: 17px;
+    padding: 10px;
+  }
+}
 @media screen and (max-width: 478px) {
   .footer {
-    border-radius: 0px;
+    min-height: 250px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footerImpresumGroup {
+    width: 400px;
+    display: flex;
+    padding-bottom: 30px;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .footerImpresumGroup .socialMedia {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footerImpresumGroup .socialMedia li {
+    list-style: none;
+    margin: 7px;
+    border-radius: 50%;
+  }
+  .footer .footerImpresumGroup .socialMedia li svg {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  .footer .footerImpresumGroup .impresum1 {
+    display: flex;
+    padding: 10px;
+  }
+  .footer .footerImpresumGroup .impresum1 a {
+    padding: 10px;
+    text-decoration: none;
+  }
+  .footer .footerImpresumGroup .impresum2 {
+    display: flex;
+    padding: 10px;
+  }
+  .footer .footerImpresumGroup .impresum2 a {
+    padding: 10px;
+    text-decoration: none;
+  }
+  .footer .copyright p {
+    font-size: 17px;
+    padding: 10px;
   }
 }
 #Dark {
@@ -1122,6 +1345,11 @@ body {
   font-size: 17px;
 }
 
+@media screen and (max-width: 1024px) {
+  .text {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 768px) {
   .text {
     font-size: 16px;

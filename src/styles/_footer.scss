@@ -1,16 +1,105 @@
 .footer {
+  min-height: 250px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+
+  .footerImpresumGroup {
+    width: 1000px;
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 50px;
+    margin: auto;
+    justify-content: space-between;
+    
+    .socialMedia {
+      display: flex;
+      flex-direction: column;
+      li{
+        list-style: none;
+        margin: 7px;
+        border-radius: 50%;
+        &:hover {
+          filter: brightness(0.9);
+          cursor: pointer;
+          transition-timing-function: ease;
+          transition-duration: 0.6s;
+        }
+  
+        svg {
+          width: 30px;
+          height: 30px;
+          padding: 8px;
+          border-radius: 10px;
+          &:hover {
+            cursor: pointer;
+            transition-timing-function: ease;
+            transition-duration: 0.6s;
+          }
+        }
+      }
+    }
+  
+    .impresum1 {
+      display: flex;
+      flex-direction: column;
+      
+      a {
+        padding: 10px;
+        text-decoration: none;
+        float:right;
+        &:hover {
+          filter: brightness(0.9);
+          cursor: pointer;
+          transition-timing-function: ease;
+          transition-duration: 0.6s;
+        }
+      }
+    }
+
+    .impresum2 {
+      display: flex;
+      flex-direction: column;
+      a {
+        padding: 10px;
+        text-decoration: none;
+        float:right;
+        &:hover {
+          filter: brightness(0.9);
+          cursor: pointer;
+          transition-timing-function: ease;
+          transition-duration: 0.6s;
+        }
+      }
+    }
+  }
+  
+  .copyright {
+
+    p {
+      font-size: 17px;
+      padding: 10px;
+    }
+  }
+}
+  
+//Laptops
+@media screen and (max-width: 1024px) {
+  .footer {
     min-height: 250px;
-    padding-top: 50px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
-
+  
     .footerImpresumGroup {
-      width: 1000px;
+      width: 700px;
       display: flex;
       text-align: left;
       flex-direction: row;
       align-items: center;
-      padding-bottom: 50px;
+      padding-bottom: 30px;
       margin: auto;
       justify-content: space-between;
       
@@ -21,23 +110,12 @@
           list-style: none;
           margin: 7px;
           border-radius: 50%;
-          &:hover {
-            filter: brightness(0.9);
-            cursor: pointer;
-            transition-timing-function: ease;
-            transition-duration: 0.6s;
-          }
     
           svg {
             width: 30px;
             height: 30px;
             padding: 8px;
             border-radius: 10px;
-            &:hover {
-              cursor: pointer;
-              transition-timing-function: ease;
-              transition-duration: 0.6s;
-            }
           }
         }
       }
@@ -50,15 +128,9 @@
           padding: 10px;
           text-decoration: none;
           float:right;
-          &:hover {
-            filter: brightness(0.9);
-            cursor: pointer;
-            transition-timing-function: ease;
-            transition-duration: 0.6s;
-          }
         }
       }
-
+  
       .impresum2 {
         display: flex;
         flex-direction: column;
@@ -66,28 +138,79 @@
           padding: 10px;
           text-decoration: none;
           float:right;
-          &:hover {
-            filter: brightness(0.9);
-            cursor: pointer;
-            transition-timing-function: ease;
-            transition-duration: 0.6s;
-          }
         }
       }
     }
     
     .copyright {
-
+  
       p {
         font-size: 17px;
         padding: 10px;
       }
     }
   }
+}
+
+
+//phone screen
+@media screen and (max-width: 478px) {
+  .footer {
+    min-height: 250px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
   
-  //phone screen
-  @media screen and (max-width: 478px) {
-    .footer {
-      border-radius: 0px;
+    .footerImpresumGroup {
+      width: 400px;
+      display: flex;
+      padding-bottom: 30px;
+      margin: auto;
+      flex-direction: column;
+      text-align: center;
+
+      .socialMedia {
+        display: flex;
+        flex-direction: column;
+
+        li{
+          list-style: none;
+          margin: 7px;
+          border-radius: 50%;
+    
+          svg {
+            width: 30px;
+            height: 30px;
+            padding: 8px;
+            border-radius: 10px;
+          }
+        }
+      }
+    
+      .impresum1 {
+        display: flex;
+        padding: 10px;
+        a {
+          padding: 10px;
+          text-decoration: none;
+        }
+      }
+  
+      .impresum2 {
+        display: flex;
+        padding: 10px;
+        a {
+          padding: 10px;
+          text-decoration: none;
+        }
+      }
+    }
+    
+    .copyright {
+      p {
+        font-size: 17px;
+        padding: 10px;
+      }
     }
   }
+}
