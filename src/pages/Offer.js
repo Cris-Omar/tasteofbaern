@@ -1,9 +1,9 @@
 import "../styles/style.css"
 
-export default function Cuisine(){
+export default function Offer(){
 
   return(
-    <div className="cuisine">
+    <div className="offer">
       <h1>our meals..</h1>
     </div>
   )

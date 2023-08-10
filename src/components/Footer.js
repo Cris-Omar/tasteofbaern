@@ -1,11 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "../styles/style.css"
-
-//footer Icons:
 import InstaIcon from "../assets/icons/InstagramIcon"
 import FacebookIcon from '../assets/icons/FacebookIcon'
-import LinkedInIcon from '../assets/icons/LinkedInIcon'
 import { useTranslation } from 'react-i18next'
 
 export default function Footer() {
@@ -30,11 +27,11 @@ export default function Footer() {
         </div>
 
         <div className='impresum2'>
-          <Link to="/cuisine">{t('Cuisine')}</Link>
+          <Link to="/offer">{t('Offer')}</Link>
           <Link to="/events">{t('Events')}</Link>
           <Link to="/voucher">{t('Voucher')}</Link>
           <Link to="/reservation">{t('Reservation')}</Link>
-          <Link to="/location">{t('Lcoation')}</Link>
+          <Link to="/location">{t('Location')}</Link>
           <Link to="/openinghours">{t('Opening_Hours')}</Link>
         </div>
       </div>

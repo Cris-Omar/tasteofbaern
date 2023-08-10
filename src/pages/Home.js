@@ -1,12 +1,10 @@
 import "../styles/style.css"
 import React from 'react'
 import { useThemeContext } from '../components/context/ThemeContext'
-
+import { useTranslation } from 'react-i18next';
 import Gallery from '../components/Gallery'
 import LogoforLight from "../assets/icons/LogoforLight"
 import LogoforDark from "../assets/icons/LogoforDark"
-
-import { useTranslation } from 'react-i18next';
 
 export default function Home() {
 

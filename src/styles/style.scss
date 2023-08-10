@@ -142,8 +142,8 @@ body {
   }
 }
 
-//__________________ Cuisine
-.cuisine {
+//__________________ Offer
+.offer {
   min-height: 70em;
   padding-top: 30px;
 
@@ -330,3 +330,22 @@ body {
   }
 }
 
+//Laptops
+@media screen and (max-width: 1024px) {
+
+}
+
+//Tablets
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+
+//Phones
+@media screen and (max-width: 480px) {
+  .text {
+    font-size: 16px;
+  }
+}

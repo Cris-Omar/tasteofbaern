@@ -38,7 +38,7 @@
     color: $SecLightColor;
   }
 
-  .cuisine {
+  .offer {
     background-color: $PrimDarkColor;
     color: $SecLightColor;
   }
@@ -244,7 +244,7 @@
     color: $SecDarkColor;
   }
 
-  .cuisine {
+  .offer {
     background-color: $PrimLightColor;
     color: $SecDarkColor;
   }
@@ -269,26 +269,35 @@
 
   .footer{
     background-color: $SecLightColor;
-    .socialMedia {
-      background-color: $SecLightColor;
-      li{
-        &:hover {
-          background-color: $SecLightColor; 
-        }
-
-        svg {
-          fill: $SecDarkColor;
+    .footerImpresumGroup {
+      .socialMedia {
+        background-color: $SecLightColor;
+        li{
           &:hover {
-            fill: $ColorOnHover;
+            background-color: $ColorOnHover; 
+          }
+          svg {
+            fill: $SecDarkColor;
+            &:hover {
+              fill: $SecLightColor;
+            }
           }
         }
       }
-    }
-
-    .impresum {
-      a {
-        &:hover{
-          background-color: $ColorOnHover;
+      .impresum1 {
+        a {
+          &:hover{
+            color: $SecDarkColor;
+            background-color: $ColorOnHover;
+          }
+        }
+      }  
+      .impresum2 {
+        a {
+          &:hover{
+            color: $SecDarkColor;
+            background-color: $ColorOnHover;
+          }
         }
       }
     }

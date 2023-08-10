@@ -8,12 +8,8 @@ import Moon from "../assets/icons/Moon"
 import Sun from "../assets/icons/Sun"
 import LogoforDark from "../assets/icons/LogoforDark"
 import LogoforLight from "../assets/icons/LogoforLight"
-import LanguageLogoBlack from "../assets/languageIcons/LanguageLogoBlack"
-import LanguageLogoWhite from "../assets/languageIcons/LanguageLogoWhite"
-import GermanLogo from "../assets/languageIcons/GermanLogo"
-import FrenchLogo from "../assets/languageIcons/FrenchLogo"
-import EnglandLogo from "../assets/languageIcons/EnglandLogo"
-import SpainLogo from "../assets/languageIcons/SpainLogo"
+import MenuXmark from "../assets/icons/MenuXmark"
+import MenuBurger from "../assets/icons/MenuBurger"
 
 export default function NavBar() {
 
@@ -40,6 +36,18 @@ export default function NavBar() {
     localStorage.setItem("lang", e.target.value);
 }
 
+  const [locOpen, setLocOpen] = useState(false)
+  const handleLocOpen = () =>  {setLocOpen(!locOpen)}
+  //Mobile Open & close menuIcon
+  const [menuClick, setMenuClick] = useState(false)
+  const handleMenuClick = () => setMenuClick(!click)
+  //Mobile dropdown handle Open
+  const [mobOpen, setMobOpen] = useState(false)
+  const handleMobOpen = () => {setMobOpen(!mobOpen)}
+  //Mobile Location dropdown
+  const [locMobOpen, setMobLocOpen] = useState(false)
+  const handleMobLocOpen = () =>  {setLocOpen(!locMobOpen)}
+
   return (
     <div className='topbar' >
       <div className="topbarExtender">
@@ -55,7 +63,7 @@ export default function NavBar() {
           <div className="navbarMenu">
             <Link to="/offer">{t("Offer")}</Link>
             <Link to="/events">{t("Events")}</Link>
-            <Link to="/voucher">{t("Voucher")}</Link>
+            {/*<Link to="/voucher">{t("Voucher")}</Link> */}
             <Link to="/reservation">{t("Reservation")}</Link>
             <Link to="/location">{t("Location")}</Link>
             <Link to="/openinghours">{t("Opening_Hours")}</Link>
@@ -67,10 +75,35 @@ export default function NavBar() {
               <option value="es">ES</option>
             </select>
 
+            <button onClick={handleMenuClick}>
+              {theme === "Light" ? <Moon /> : <Sun />}
+            </button>
+          </div>
+          <div className="mobNavbarMenu" onClick= {() => {handleMenuClick(); handleMobOpen();}}>
+            {click ? <MenuBurger /> : <MenuXmark />}
+
+            {mobOpen && (
+              <div className='mobSubMenu'>
+
+                <div className='mobMenuItem' onMouseEnter={handleMobLocOpen} onMouseLeave={handleMobLocOpen}>
+                  <Link to="/standorte" >Standorte</Link>
+                  {locOpen && (
+                    <div className='mobMenuContent'>
+                    <Link to="/offer">{t("Offer")}</Link>
+                    <Link to="/events">{t("Events")}</Link>
+                    {/*<Link to="/voucher">{t("Voucher")}</Link> */}
+                    <Link to="/reservation">{t("Reservation")}</Link>
+                    <Link to="/location">{t("Location")}</Link>
+                    <Link to="/openinghours">{t("Opening_Hours")}</Link>
+                    </div>
+                  )}
+                </div>
+              </div>
+              )}
+
             <button onClick={handleClick}>
               {theme === "Light" ? <Moon /> : <Sun />}
             </button>
-
           </div>
         </div>
       </div>

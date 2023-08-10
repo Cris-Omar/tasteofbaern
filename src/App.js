@@ -10,7 +10,6 @@ import Contact from "./pages/footer/Contact"
 import Jobs from './pages/footer/Jobs';
 import LegalNotice from './pages/footer/LegalNotice';
 import NoMatch from './pages/NoMatch';
-import Cuisine from "./pages/Cuisine"
 import Events from "./pages/events/Events"
 import Newsletter from "./pages/footer/Newsletter"
 import Reservation from "./pages/Reservation"
@@ -19,6 +18,7 @@ import Team from "./pages/footer/Team"
 import Voucher from "./pages/Voucher"
 import Location from "./pages/Location"
 import { useThemeContext } from './components/context/ThemeContext';
+import Offer from './pages/Offer';
 
 function App() {
 
@@ -39,7 +39,7 @@ function App() {
             <Route path="contact" element={<Contact/>} />
             <Route path="jobs" element={<Jobs/>} />
             <Route path="legalnotice" element={<LegalNotice/>} />
-            <Route path="cuisine" element={<Cuisine/>} />
+            <Route path="offer" element={<Offer/>} />
             <Route path="location" element={<Location/>} />
             <Route path="events" element={<Events/>} />
             <Route path="newsletter" element={<Newsletter/>} />

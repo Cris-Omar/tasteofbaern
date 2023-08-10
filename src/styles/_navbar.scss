@@ -84,37 +84,44 @@
           }
         }
       }
+
+      .mobNavbarMenu {
+        display: none;
+      }
     }
   }
-  
-  //phone screen
-  @media screen and (max-width: 478px) {
-    
-    .navbar {
-      padding-bottom: 0px;
-      border-radius: 0px;
-  
-      .navbarWrapper {
-        display: flex;
-        flex-direction:row;
-        justify-content: space-between;
-  
+
+  //Laptops
+  @media screen and (max-width: 1024px) {
+
+    .topbarExtender {
+      width: 100%;
+      .topbarWrapper {
+        padding-top: 10px;
+        padding-bottom: 10px;
         .logo {
-          a {
-            font-size: 20px;
-            font-weight: bold;
-            text-decoration: none;
-            color: $SecDarkColor;
-            &:hover {
-              background-color: $SecLightColor;
-              filter: brightness(0.9);
-              cursor: pointer;
-              transition-timing-function: ease;
-              transition-duration: 0.6s;
+          margin: auto;
+        }
+    
+        .navbarMenu {
+          display: none;
+        }
+
+        .mobNavbarMenu {
+          display: block;
+
+          .mobSubMenu {
+            .mobMenuItem {
+              display: block;
             }
           }
         }
       }
     }
+  }
+  
+  //phone screen
+  @media screen and (max-width: 478px) {
+    display: none;
   }
 }
