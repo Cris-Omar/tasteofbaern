@@ -8,25 +8,48 @@
   h3 {color:$SecLightColor;}
   label{color: $SecLightColor;}
 
-  .topbar{
+  .topbar {
+    background-color: $SecDarkColor;
     a{
       color: $SecLightColor;
     }
-    .topbarExtender{
-      background-color: $SecDarkColor;
-      .topbarWrapper {
-        background-color: $SecDarkColor;
-        .navbarMenu {
-          select{
-            color: $SecLightColor;
-            option {
-              background-color: $SecDarkColor;
-            }
+    .navbarMenu {
+      .options {
+        select {
+          color: $SecLightColor;
+          option {
+            background-color: $SecDarkColor;
           }
-          button{
-            svg{
-              fill: yellow;
-            }
+        }
+    
+        button{
+          svg {
+            fill: yellow;
+          }
+        }
+      }
+    }
+
+    .mobNavbarMenu {
+      .openCloseIcon {
+        svg {
+          fill: $SecLightColor;
+        }
+    
+        .mobSubMenu {
+          background-color: $PrimDarkColor;
+        }
+    
+        select {
+          color: $PrimLightColor;
+          option {
+            color: $SecDarkColor;
+          }
+        }
+    
+        button{
+          svg {
+            fill: yellow;
           }
         }
       }
@@ -114,8 +137,6 @@
   .footer{
     background-color: $SecDarkColor;
     .footerImpresumGroup {
-
-
       .socialMedia {
         li{
           &:hover {
@@ -174,20 +195,48 @@
   h2{color: $SecDarkColor;}
   label{color: $SecDarkColor;}
 
-  .topbar{
+  .topbar {
+    background-color: $SecLightColor;
     a{
       color: $SecDarkColor;
     }
-    .topbarExtender{
-      background-color: $SecLightColor;
-      .topbarWrapper {
-        background-color: $SecLightColor;
-        .navbarMenu {
-          select{
-            color: $SecDarkColor;
-            option {
-              background-color: $SecLightColor;
-            }
+    .navbarMenu {
+      .options {
+        select {
+          color: $SecDarkColor;
+          option {
+            background-color: $SecLightColor;
+          }
+        }
+    
+        button{
+          svg {
+            fill: darkblue;
+          }
+        }
+      }
+    }
+
+    .mobNavbarMenu {
+      .openCloseIcon {
+        svg {
+          fill: $PrimDarkColor;
+        }
+    
+        .mobSubMenu {
+          background-color: $PrimLightColor;
+        }
+    
+        select {
+          color: $PrimDarkColor;
+          option {
+            color: $SecLightColor;
+          }
+        }
+    
+        button{
+          svg {
+            fill: darkblue;
           }
         }
       }
@@ -312,4 +361,3 @@
     color: $SecDarkColor;
   }
 }
-

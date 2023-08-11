@@ -1,8 +1,9 @@
 .topbar {
   width: 100%;
-  max-width: 1260px;
   margin: auto;
   .navbarMenu {
+    max-width: 1260px;
+    margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
     height: 100%;
@@ -70,8 +71,8 @@
         outline: inherit; 
     
         svg {
-          width: 25px;
-          height: 25px;
+          width: 1.5em;
+          height: 1.5em;
           cursor: pointer;
           &:hover {
             filter: opacity(0.7);
@@ -88,166 +89,100 @@
   }
 }
 
- //Laptops
- @media screen and (max-width: 1024px) {
-  .topbar {        
-    .navbarMenu {
-      display: none;
+// Shared styles for laptop and phone
+.mobNavbarMenu {
+  min-height: 5vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+
+  .openCloseIcon {
+    display: flex;
+    flex-direction: column;
+    svg {
+      margin: auto;
+      width: 2.5em;
+      height: 2.5em;
+      display: block;
     }
 
-    .mobNavbarMenu {
-      display: flex;
+    .mobSubMenu {
+      list-style-type: none;
       flex-direction: column;
-
-      .logo {
-        display: flex;
-        margin: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        svg{
-          width: 250px;
-          height: 60px;
+      width: 100vw;
+      position: relative;
+      li{
+        padding: 15px;
+        margin: 10px;
+        a{
+          text-decoration: none;
         }
       }
+    }
 
-      .openCloseIcon {
-        display: flex;
-        margin: auto;
-        svg {
-          margin: auto;
-          width: 30px;
-          height: 30px;
-        }
+    select {
+      padding: 1.5em;
+      display: block;
+      margin: auto;
+      appearance: none;
+      background-color: transparent;
+      border: none;
+      font-weight: bold;
+      -webkit-appearance: button;
+      appearance: button;
+      outline: none;
+      font-size: 1em;
+      option {
+        padding: 10px;
+      }
+    }
 
-        .mobSubMenu {
-          list-style-type: none;
-          flex-direction: column;
-          position: relative;
-          background-color: #6C2B3B;
-          font-size: 16px;
-            li{
-              padding: 15px;
-              margin: 10px;
-              a{
-                text-decoration: none;
-              }
-            }
-            select {
-              display: inline-block;
-              appearance: none;
-              background-color: transparent;
-              border: none;
-              cursor: pointer;
-              font-weight: bold;
-              -webkit-appearance: button;
-              appearance: button;
-              outline: none;
-              
-              option {
-                padding: 10px;
-                color: inherit;
-              }
-            }
-            button{
-              margin-right: 20px;
-              background: none;
-              color: inherit;
-              border: none;
-              border-radius: 5px;
-              padding: 0;
-              font: inherit;
-              cursor: pointer;
-              outline: inherit; 
-          
-              svg {
-                width: 25px;
-                height: 25px;
-              }
-            }
-          }
+    button{
+      display: block;
+      margin: auto;
+      background: none;
+      color: inherit;
+      border: none;
+      border-radius: 5px;
+      padding: 1.5em;
+      font: inherit;
+      outline: inherit; 
+  
+      svg {
+        width: 25px;
+        height: 25px;
       }
     }
   }
 }
 
+ //Media Query for Laptops
+ @media screen and (max-width: 1024px) {
+  .topbar {        
+    .navbarMenu {
+      display: none;
+    }
+    .mobNavbarMenu {
+      display: flex;
+    }
+  }
+}
 
-//phone screen
+ //Media Query for Phones
 @media screen and (max-width: 478px) {
   .topbar {        
     .navbarMenu {
       display: none;
     }
-
     .mobNavbarMenu {
       display: flex;
-      flex-direction: column;
-
-      .logo {
-        display: flex;
-        margin: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        svg{
-          width: 250px;
-          height: 60px;
-        }
-      }
-
       .openCloseIcon {
-        display: flex;
-        margin: auto;
         svg {
-          margin: auto;
-          width: 30px;
-          height: 30px;
+          width: 2em;
+          height: 2em;
         }
-
-        .mobSubMenu {
-          list-style-type: none;
-          flex-direction: column;
-          position: relative;
-          background-color: #6C2B3B;
-          font-size: 16px;
-            li{
-              padding: 15px;
-              margin: 10px;
-              a{
-                text-decoration: none;
-              }
-            }
-            select {
-              display: inline-block;
-              appearance: none;
-              background-color: transparent;
-              border: none;
-              cursor: pointer;
-              font-weight: bold;
-              -webkit-appearance: button;
-              appearance: button;
-              outline: none;
-              
-              option {
-                padding: 10px;
-                color: inherit;
-              }
-            }
-            button{
-              margin-right: 20px;
-              background: none;
-              color: inherit;
-              border: none;
-              border-radius: 5px;
-              padding: 0;
-              font: inherit;
-              cursor: pointer;
-              outline: inherit; 
-          
-              svg {
-                width: 25px;
-                height: 25px;
-              }
-            }
-          }
       }
     }
   }

@@ -1,18 +1,19 @@
 .footer {
-  min-height: 250px;
+  min-height: auto;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
 
   .footerImpresumGroup {
-    width: 1000px;
     display: flex;
     text-align: left;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+    max-width: 1260px;
+    width: 100%;
     padding-bottom: 50px;
     margin: auto;
-    justify-content: space-between;
     
     .socialMedia {
       display: flex;
@@ -84,131 +85,39 @@
     }
   }
 }
-  
-//Laptops
+
+//Media Query for Laptops
 @media screen and (max-width: 1024px) {
   .footer {
-    min-height: 250px;
     padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-  
-    .footerImpresumGroup {
-      width: 700px;
-      display: flex;
-      text-align: left;
-      flex-direction: row;
-      align-items: center;
-      padding-bottom: 30px;
-      margin: auto;
-      justify-content: space-between;
-      
-      .socialMedia {
-        display: flex;
-        flex-direction: column;
-        li{
-          list-style: none;
-          margin: 7px;
-          border-radius: 50%;
-    
-          svg {
-            width: 30px;
-            height: 30px;
-            padding: 8px;
-            border-radius: 10px;
-          }
-        }
-      }
-    
-      .impresum1 {
-        display: flex;
-        flex-direction: column;
-        
-        a {
-          padding: 10px;
-          text-decoration: none;
-          float:right;
-        }
-      }
-  
-      .impresum2 {
-        display: flex;
-        flex-direction: column;
-        a {
-          padding: 10px;
-          text-decoration: none;
-          float:right;
-        }
-      }
-    }
-    
-    .copyright {
-  
-      p {
-        font-size: 17px;
-        padding: 10px;
-      }
+
+  .footerImpresumGroup {
+    padding-bottom: 30px;
     }
   }
 }
 
-
-//phone screen
+//Media Query for Phones
 @media screen and (max-width: 478px) {
   .footer {
-    min-height: 250px;
     padding-top: 30px;
-    display: flex;
-    flex-direction: column;
   
     .footerImpresumGroup {
-      width: 400px;
-      display: flex;
-      padding-bottom: 30px;
+      padding-bottom: 20px;
       margin: auto;
       flex-direction: column;
       text-align: center;
-
       .socialMedia {
         display: flex;
-        flex-direction: column;
-
-        li{
-          list-style: none;
-          margin: 7px;
-          border-radius: 50%;
-    
-          svg {
-            width: 30px;
-            height: 30px;
-            padding: 8px;
-            border-radius: 10px;
-          }
-        }
+        flex-direction: row;
       }
-    
+
       .impresum1 {
-        display: flex;
         padding: 10px;
-        a {
-          padding: 10px;
-          text-decoration: none;
-        }
+
       }
   
       .impresum2 {
-        display: flex;
-        padding: 10px;
-        a {
-          padding: 10px;
-          text-decoration: none;
-        }
-      }
-    }
-    
-    .copyright {
-      p {
-        font-size: 17px;
         padding: 10px;
       }
     }

@@ -34,7 +34,7 @@ export default function Gallery() {
       autoPlay={true}
       showThumbnails={false}
       showBullets={true}
-      
+      showFullscreenButton={false}
       />
     </div>
   )
