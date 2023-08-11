@@ -95,17 +95,23 @@
   padding-top: 20px;
   padding-bottom: 20px;
   height: 100%;
-  width: 100%;
-  justify-content: center;
+  width: 95%;
+  margin: auto;
+  justify-content: space-between;
+ 
+  svg {
+    width: 250px;
+    height: 60px;
+  }
 
   .openCloseIcon {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
     svg {
-      margin: auto;
       width: 2.5em;
       height: 2.5em;
-      display: block;
     }
 
     .mobSubMenu {
