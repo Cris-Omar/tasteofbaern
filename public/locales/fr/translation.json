@@ -1,6 +1,7 @@
 {
   "Welcome_Message": "bienvenue a",
   "Welcome_Text": "nous rassemblerons différents plats de streetfood en un seul lieu, où vous pourrez manger. boire. relax.",
+  "Subwelcome_Text": "Nous nous réjouissons de te voir!",
 
   "Home": "Accueil",
   "contact_us": "Contactez-nous!",
@@ -10,6 +11,12 @@
   "message": "Message",
   "upload_file": "Télécharger un fichier",
   "send": "Envoyer",
+
+  "Reservation_page": "Réservation",
+  "Reservation_Subtext": "Nous sommes heureux que vous soyez intéressé par une réservation, vous avez les possibilités suivantes :",
+  "Reservation_mail": "Envoyez-nous un e-mail à :",
+  "Reservation_formular": "via notre formulaire de contact :",
+  "Reservation_phone": "Ou appelez-nous au numéro :",
 
   "Team_Member":"Les membres de notre équipe",
   "Team_Name":"Nom",

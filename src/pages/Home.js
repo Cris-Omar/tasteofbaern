@@ -17,8 +17,9 @@ export default function Home() {
 
     <h2>{t('Welcome_Message')}</h2>
         {theme === "Light" ? <LogoforLight /> : <LogoforDark /> }
-      <p>{t('Welcome_Text')}</p>
+      <h3>{t('Welcome_Text')}</h3>
         <Gallery />
+      <p>{t('Subwelcome_Text')}😃</p>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 {
   "Welcome_Message": "Welcome to",
   "Welcome_Text": "we will bring different streetfoods into one location, where you Eat. Drink. and Chill.",
+  "Subwelcome_Text": "We look forward to seeing you!",
 
   "Home": "Home",
   "contact_us": "contact us!",
@@ -10,6 +11,12 @@
   "message": "message",
   "upload_file": "upload file",
   "send": "send",
+
+  "Reservation_page": "Reservation",
+  "Reservation_Subtext": "We are pleased if you are interested in making a reservation, you have the following options:",
+  "Reservation_mail": "Send us an email at:",
+  "Reservation_formular": "via our contact form:",
+  "Reservation_phone": "Or call us at the number:",
 
   "Team_Member":"Team members",
   "Team_Name":"name",
