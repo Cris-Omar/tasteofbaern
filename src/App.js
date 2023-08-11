@@ -19,7 +19,7 @@ import Voucher from "./pages/Voucher"
 import Location from "./pages/Location"
 import { useThemeContext } from './components/context/ThemeContext';
 import Offer from './pages/Offer';
-
+import ScrollToTop from "./components/ScrollToTop"
 function App() {
 
   //variable for the use of the Theme Context
@@ -53,6 +53,7 @@ function App() {
         <Footer />
       </div>
     </div>
+    <ScrollToTop />
   </Router>
   );
 }

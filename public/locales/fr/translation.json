@@ -12,12 +12,6 @@
   "upload_file": "Télécharger un fichier",
   "send": "Envoyer",
 
-  "Reservation_page": "Réservation",
-  "Reservation_Subtext": "Nous sommes heureux que vous soyez intéressé par une réservation, vous avez les possibilités suivantes :",
-  "Reservation_mail": "Envoyez-nous un e-mail à :",
-  "Reservation_formular": "via notre formulaire de contact :",
-  "Reservation_phone": "Ou appelez-nous au numéro :",
-
   "Team_Member":"Les membres de notre équipe",
   "Team_Name":"Nom",
   "Team_Position":"Position",
@@ -26,13 +20,22 @@
   "Offer": "offre",
   "Events": "Evénements",
   "Voucher": "Voucher",
+
   "Reservation": "Réservation",
+  "Reservation_Subtext": "Nous sommes heureux que vous soyez intéressé par une réservation, vous avez les possibilités suivantes :",
+  "Reservation_mail": "Envoyez-nous un e-mail à :",
+  "Reservation_formular": "via notre formulaire de contact :",
+  "Reservation_phone": "Ou appelez-nous au numéro :",
+
   "Location": "Localisation",
   "Opening_Hours": "Horaires d'ouverture",
 
   "Contact": "Contact",
   "Legal_Notice": "Avis juridique",
+
   "Jobs": "Emplois",
+  "Jobs_Subtext":"Les postes vacants seront listés ici dès qu'ils seront disponibles.",
+
   "Team": "L'équipe",
   "Newsletter": "Newsletter",
 

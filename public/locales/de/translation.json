@@ -12,12 +12,6 @@
   "upload_file": "Datei hochladen",
   "send": "Senden",
 
-  "Reservation_page": "Reservierung",
-  "Reservation_Subtext": "Es Freut uns sind sie daran interessiert, eine Reservation zu machen, sie haben folgende Möglichkeiten:",
-  "Reservation_mail": "Senden sie uns eine Email an:",
-  "Reservation_formular": "über unser Kontaktformular:",
-  "Reservation_phone": "Oder rufen sie uns an, unter der Nummer: ",
-
   "Team_Member":"Team Mitglieder",
   "Team_Name":"Name",
   "Team_Position":"Position",
@@ -26,13 +20,22 @@
   "Offer": "Angebot",
   "Events": "Events",
   "Voucher": "Gutschein",
+  
   "Reservation": "Reservierung",
+  "Reservation_Subtext": "Es Freut uns sind sie daran interessiert, eine Reservation zu machen, sie haben folgende Möglichkeiten:",
+  "Reservation_mail": "Senden sie uns eine Email an:",
+  "Reservation_formular": "über unser Kontaktformular:",
+  "Reservation_phone": "Oder rufen sie uns an, unter der Nummer: ",
+
   "Location": "Standort",
   "Opening_Hours": "Öffnungszeiten",
 
   "Contact": "Kontakt",
   "Legal_Notice": "Rechtlicher Hinweis",
+
   "Jobs": "Karriere",
+  "Jobs_Subtext":"Vakanzen werden hier aufgelistet, sobald diese verfügbar sind.",
+
   "Team": "Team",
   "Newsletter": "Newsletter",
 

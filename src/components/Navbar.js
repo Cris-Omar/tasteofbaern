@@ -53,9 +53,9 @@ export default function NavBar() {
       <div className="navbarMenu">
         <div className='logo'> 
             {theme === "Light" ? (
-                <Link to="/"><LogoforLight /></Link>
+                <Link to="/" ><LogoforLight /></Link>
               ) : (
-                <Link to="/"><LogoforDark /></Link>
+                <Link to="/" ><LogoforDark /></Link>
               )}
         </div>
         <div className="options">

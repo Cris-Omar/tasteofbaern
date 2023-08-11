@@ -9,7 +9,7 @@ export default function Reservation(){
 
   return(
     <div className="reservation">
-      <h2>{t('Reservation_page')}</h2>
+      <h2>{t('Reservation')}</h2>
 
       <p>{t('Reservation_Subtext')}</p>
       <p>{t('Reservation_mail')} <Link to="mailto:reservation@tasteofbaern.ch">reservation@tasteofbaern.ch</Link></p>

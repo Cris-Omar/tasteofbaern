@@ -37,7 +37,7 @@
         }
     
         .mobSubMenu {
-          background-color: $PrimDarkColor;
+          background-color: #0A0A0A;
         }
     
         select {
@@ -126,11 +126,24 @@
     background-color: $PrimDarkColor;
     color: $SecLightColor;
   }
+  //__________________ Contact
+  .contact {
+    .contactForm {
+      form {
+        .object {
+          label {
+            color:$SecLightColor;
+          }
+          input, textarea {
+            background-color: $SecDarkColor;
+            color: $SecLightColor;
+          }
+        }
   
-  .contactForm{
-    .object{
-      input, textarea {
-        background-color: $SecDarkColor;
+        button {
+          background-color: $ColorOnHover;
+          color: $PrimDarkColor;
+        }
       }
     }
   }
@@ -225,13 +238,13 @@
         }
     
         .mobSubMenu {
-          background-color: $PrimLightColor;
+          background-color: $SecLightColor;
         }
     
         select {
-
+          color: $PrimDarkColor;
           option {
-            background-color: $SecLightColor;
+            background-color: $PrimLightColor;
             color: $PrimDarkColor;
           }
         }
@@ -310,13 +323,25 @@
     color: $SecDarkColor;
   }
 
-  .contactForm{
-    .object{
-      input, textarea {
-        background-color: $SecLightColor;
+//__________________ Contact
+.contact {
+  .contactForm {
+    form {
+      .object {
+        label {
+          color:$SecDarkColor;
+        }
+        input, textarea {
+          background-color: $SecLightColor;
+        }
+      }
+
+      button {
+        background-color: $ColorOnHover;
       }
     }
   }
+}
 
   .footer{
     background-color: $SecLightColor;

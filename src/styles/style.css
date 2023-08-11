@@ -533,7 +533,7 @@
   width: 100%;
   border-radius: 3em;
   position: absolute;
-  top: calc(100% + 10px); /* Position it just below the parent .openCloseIcon */
+  top: calc(100% + 10px);
   left: 0;
   z-index: 1;
 }
@@ -746,7 +746,7 @@
   fill: #F7F8F9;
 }
 #Dark .topbar .mobNavbarMenu .openCloseIcon .mobSubMenu {
-  background-color: #161616;
+  background-color: #0A0A0A;
 }
 #Dark .topbar .mobNavbarMenu .openCloseIcon select {
   color: #FFFDFA;
@@ -814,8 +814,16 @@
   background-color: #161616;
   color: #F7F8F9;
 }
-#Dark .contactForm .object input, #Dark .contactForm .object textarea {
+#Dark .contact .contactForm form .object label {
+  color: #F7F8F9;
+}
+#Dark .contact .contactForm form .object input, #Dark .contact .contactForm form .object textarea {
   background-color: #000000;
+  color: #F7F8F9;
+}
+#Dark .contact .contactForm form button {
+  background-color: #FF9955;
+  color: #161616;
 }
 #Dark .footer {
   background-color: #000000;
@@ -881,10 +889,13 @@
   fill: #161616;
 }
 #Light .topbar .mobNavbarMenu .openCloseIcon .mobSubMenu {
-  background-color: #FFFDFA;
+  background-color: #F7F8F9;
+}
+#Light .topbar .mobNavbarMenu .openCloseIcon select {
+  color: #161616;
 }
 #Light .topbar .mobNavbarMenu .openCloseIcon select option {
-  background-color: #F7F8F9;
+  background-color: #FFFDFA;
   color: #161616;
 }
 #Light .topbar .mobNavbarMenu .openCloseIcon button svg {
@@ -942,8 +953,14 @@
   background-color: #FFFDFA;
   color: #000000;
 }
-#Light .contactForm .object input, #Light .contactForm .object textarea {
+#Light .contact .contactForm form .object label {
+  color: #000000;
+}
+#Light .contact .contactForm form .object input, #Light .contact .contactForm form .object textarea {
   background-color: #F7F8F9;
+}
+#Light .contact .contactForm form button {
+  background-color: #FF9955;
 }
 #Light .footer {
   background-color: #F7F8F9;
@@ -1206,22 +1223,17 @@ h3 {
   padding-top: 1.75em;
   padding-bottom: 3em;
 }
-.contact h1 {
-  padding: 15px;
-  margin: 0px;
-}
 .contact .contactForm {
-  max-width: 600px;
-  padding-top: 100px;
+  max-width: 37.5em;
   margin: auto;
 }
 .contact .contactForm form {
-  padding: 15px;
-  margin: auto;
+  padding: 0em 2em 1em 2em;
 }
 .contact .contactForm form .object label {
   color: #000000;
-  margin: 20px 0px;
+  margin: 2em 0em 0.5em 0em;
+  font-weight: bold;
   text-align: left;
   display: block;
 }
@@ -1231,40 +1243,22 @@ h3 {
   resize: none;
   border: none;
   border-bottom: 1px solid rgb(184, 177, 177);
+  font-weight: bold;
 }
 .contact .contactForm form .object input:focus, .contact .contactForm form .object textarea:focus {
   border-bottom: 1px solid black;
   filter: brightness(1.2);
 }
-.contact .contactForm form .fileUploadIcon {
-  max-width: 200px;
-  margin: auto;
-}
-.contact .contactForm form .fileUploadIcon label {
-  color: #000000;
-  display: block;
-}
-.contact .contactForm form .fileUploadIcon svg {
-  fill: #000000;
-  width: 80px;
-  margin-top: 15px;
-  margin: 10px 0px 15px 0px;
-}
-.contact .contactForm form .fileUploadIcon svg:hover {
-  fill: grey;
-  filter: brightness(0.9);
-  cursor: pointer;
-}
 .contact .contactForm form button {
-  margin-top: 50px;
+  margin-top: 2.5em;
   width: 90%;
-  max-width: 150px;
-  background-color: #33383b;
-  color: white;
-  cursor: pointer;
+  max-width: 8em;
+  border: none;
   border-radius: 5px;
-  padding: 5px;
-  font-size: 17px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {

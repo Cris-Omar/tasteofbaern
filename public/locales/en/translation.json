@@ -4,35 +4,38 @@
   "Subwelcome_Text": "We look forward to seeing you!",
 
   "Home": "Home",
-  "contact_us": "contact us!",
+  "contact_us": "Contact us!",
   "contact_us_text": "if you have a question or input, write us!",
-  "name": "name",
-  "mail": "mail",
-  "message": "message",
-  "upload_file": "upload file",
-  "send": "send",
+  "name": "Name",
+  "mail": "Mail",
+  "message": "Message",
+  "upload_file": "Upload file",
+  "send": "Send",
 
-  "Reservation_page": "Reservation",
+  "Team_Member":"Team members",
+  "Team_Name":"Name",
+  "Team_Position":"Position",
+  "Team_Contact":"Contact",
+
+  "Offer": "Offer",
+  "Events": "Events",
+  "Voucher": "Voucher",
+
+  "Reservation": "Reservation",
   "Reservation_Subtext": "We are pleased if you are interested in making a reservation, you have the following options:",
   "Reservation_mail": "Send us an email at:",
   "Reservation_formular": "via our contact form:",
   "Reservation_phone": "Or call us at the number:",
 
-  "Team_Member":"Team members",
-  "Team_Name":"name",
-  "Team_Position":"position",
-  "Team_Contact":"contact",
-
-  "Offer": "Offer",
-  "Events": "Events",
-  "Voucher": "Voucher",
-  "Reservation": "Reservation",
   "Location": "Location",
   "Opening_Hours": "Opening Hours",
 
   "Contact": "Contact",
   "Legal_Notice": "Legal Notice",
+
   "Jobs": "Jobs",
+  "Jobs_Subtext":"Vacancies will be listed here as they become available.",
+
   "Team": "Team",
   "Newsletter": "Newsletter",
 

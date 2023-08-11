@@ -31,6 +31,7 @@ body {
 
 h2 { padding-bottom:1em;}
 h3 { padding: 1em; }
+
 //___________________ Home
 .home {
   @each $property, $value in $defaultSectionSettings {
@@ -66,7 +67,6 @@ h3 { padding: 1em; }
 
   .teamMember {
     padding: 25px;
-
     img {
       height: 150px;
       width: 150px;
@@ -245,25 +245,16 @@ h3 { padding: 1em; }
     #{$property}: $value;
   }
 
-  h1{
-      padding: 15px;
-      margin: 0px;
-  }
-
   .contactForm {
-    max-width: 600px;
-    padding-top: 100px;
+    max-width: 37.5em;
     margin: auto;
-
     form {
-      padding: 15px;
-      margin: auto;
-
+      padding: 0em 2em 1em 2em;  
       .object {
-
         label {
           color:$SecDarkColor;
-          margin: 20px 0px;
+          margin: 2em 0em 0.5em 0em;
+          font-weight: bold;
           text-align: left;
           display: block;
         }
@@ -274,6 +265,7 @@ h3 { padding: 1em; }
           resize: none;
           border: none;
           border-bottom: 1px solid rgb(184, 177, 177);
+          font-weight: bold;
           &:focus {
             border-bottom: 1px solid black;
             filter: brightness(1.2);
@@ -281,38 +273,16 @@ h3 { padding: 1em; }
         }
       }
 
-      .fileUploadIcon{
-        max-width: 200px;
-        margin: auto;
-        
-        label {
-          color: $SecDarkColor;
-          display: block;
-        }
-
-        svg {
-          fill: $SecDarkColor;
-          width: 80px;
-          margin-top: 15px;
-          margin: 10px 0px 15px 0px;
-          &:hover {
-            fill: grey;
-            filter: brightness(0.9);
-            cursor: pointer;
-          }
-        }
-      }
-
       button {
-        margin-top: 50px;
+        margin-top: 2.5em;
         width: 90%;
-        max-width: 150px;
-        background-color: #33383b;
-        color: white;
-        cursor: pointer;
+        max-width: 8em;
+        border: none;
         border-radius: 5px;
-        padding: 5px;
-        font-size: 17px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
       }
     }
   }

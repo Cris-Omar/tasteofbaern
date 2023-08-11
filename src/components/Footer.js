@@ -15,7 +15,7 @@ export default function Footer() {
       <div className='footerImpresumGroup'>
         <div className='socialMedia'>
           <li><a target="_blank" rel="noreferrer" href='https://www.instagram.com/taste_of_baern/' ><InstaIcon /></a></li>
-          <li><a target="_blank" rel="noreferrer" href='https://www.facebook.com/' ><FacebookIcon /></a></li>
+          <li><a target="_blank" rel="noreferrer" href='https://www.facebook.com/profile.php?id=61550281792846' ><FacebookIcon /></a></li>
         </div>
 
         <div className='impresum1'>
@@ -29,7 +29,7 @@ export default function Footer() {
         <div className='impresum2'>
           <Link to="/offer">{t('Offer')}</Link>
           <Link to="/events">{t('Events')}</Link>
-          <Link to="/voucher">{t('Voucher')}</Link>
+          {/*<Link to="/voucher">{t('Voucher')}</Link> */}
           <Link to="/reservation">{t('Reservation')}</Link>
           <Link to="/location">{t('Location')}</Link>
           <Link to="/openinghours">{t('Opening_Hours')}</Link>

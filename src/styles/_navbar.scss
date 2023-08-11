@@ -104,7 +104,6 @@
     }
   }
 
-
   .openCloseIcon {
     display: flex;
     flex-direction: column;
@@ -125,7 +124,7 @@
       width: 100%;
       border-radius: 3em;
       position: absolute;
-      top: calc(100% + 10px); /* Position it just below the parent .openCloseIcon */
+      top: calc(100% + 10px);
       left: 0;
       z-index: 1;
 
