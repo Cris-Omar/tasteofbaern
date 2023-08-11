@@ -1,6 +1,6 @@
 import "../styles/style.css";
 import React, {useState} from "react";
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useThemeContext } from '../components/context/ThemeContext';
 import { useTranslation } from 'react-i18next';
 import i18n from "i18next";
@@ -14,10 +14,6 @@ import MenuBurger from "../assets/icons/MenuBurger";
 export default function NavBar() {
 
   const { t } = useTranslation();
-
-    //use Location for Logo or Back Home Component
-    const location = useLocation()
-    const isStartPage = location.pathname === "/"
 
   //change Light Dark/Theme
   const {theme, setTheme } = useThemeContext();
@@ -85,8 +81,7 @@ export default function NavBar() {
 
       {/*small screen Navigation Menu starts here */}
       <div className="mobNavbarMenu">
-        { isStartPage ? ( null ) : ( <LogoforDark /> )}
-        
+
         <div className="openCloseIcon" onClick= {() => {handleMenuClick(); handleMobOpen();}} >
           {menuClick ? <MenuXmark /> : <MenuBurger /> }
 

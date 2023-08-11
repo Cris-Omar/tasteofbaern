@@ -506,23 +506,18 @@
   padding-top: 20px;
   padding-bottom: 20px;
   height: 100%;
-  width: 95%;
-  margin: auto;
-  justify-content: space-between;
-}
-.mobNavbarMenu svg {
-  width: 250px;
-  height: 60px;
+  width: 100%;
+  justify-content: center;
 }
 .mobNavbarMenu .openCloseIcon {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  width: 50%;
 }
 .mobNavbarMenu .openCloseIcon svg {
+  margin: auto;
   width: 2.5em;
   height: 2.5em;
+  display: block;
 }
 .mobNavbarMenu .openCloseIcon .mobSubMenu {
   list-style-type: none;
