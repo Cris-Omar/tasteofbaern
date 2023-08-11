@@ -465,7 +465,7 @@
   -moz-appearance: button;
        appearance: button;
   outline: none;
-  font-size: 15px;
+  font-size: 16px;
 }
 .topbar .navbarMenu .options select option {
   padding: 10px;
@@ -477,7 +477,7 @@
   transition-timing-function: ease;
 }
 .topbar .navbarMenu .options button {
-  margin-right: 20px;
+  margin-right: 2em;
   background: none;
   color: inherit;
   border: none;
@@ -486,6 +486,8 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 .topbar .navbarMenu .options button svg {
   width: 1.5em;
@@ -502,29 +504,38 @@
 }
 
 .mobNavbarMenu {
-  min-height: 5vh;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  padding: 1.25em;
+  position: relative;
+  padding: 2em 2em 1.25em 2em;
+}
+.mobNavbarMenu a svg {
+  width: 150px;
+  height: 30px;
 }
 .mobNavbarMenu .openCloseIcon {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  margin: auto;
+  width: 100%;
 }
 .mobNavbarMenu .openCloseIcon svg {
-  margin: auto;
-  width: 2.5em;
-  height: 2.5em;
-  display: block;
+  width: 2em;
+  height: 2em;
 }
 .mobNavbarMenu .openCloseIcon .mobSubMenu {
   list-style-type: none;
   flex-direction: column;
-  width: 100vw;
-  position: relative;
   font-weight: bold;
+  padding: 2em 0em 2em 0em;
+  width: 100%;
+  border-radius: 3em;
+  position: absolute;
+  top: calc(100% + 10px); /* Position it just below the parent .openCloseIcon */
+  left: 0;
+  z-index: 1;
 }
 .mobNavbarMenu .openCloseIcon .mobSubMenu li {
   padding: 15px;
@@ -533,7 +544,7 @@
 .mobNavbarMenu .openCloseIcon .mobSubMenu li a {
   text-decoration: none;
 }
-.mobNavbarMenu .openCloseIcon select {
+.mobNavbarMenu .openCloseIcon .mobSubMenu select {
   padding: 1.5em;
   display: block;
   margin: auto;
@@ -549,23 +560,22 @@
   outline: none;
   font-size: 1em;
 }
-.mobNavbarMenu .openCloseIcon select option {
-  padding: 10px;
+.mobNavbarMenu .openCloseIcon .mobSubMenu select option {
+  padding: 1em;
+  margin: 0;
 }
-.mobNavbarMenu .openCloseIcon button {
+.mobNavbarMenu .openCloseIcon .mobSubMenu button {
   display: block;
   margin: auto;
   background: none;
   color: inherit;
   border: none;
-  border-radius: 5px;
-  padding: 1.5em;
   font: inherit;
   outline: inherit;
 }
-.mobNavbarMenu .openCloseIcon button svg {
-  width: 25px;
-  height: 25px;
+.mobNavbarMenu .openCloseIcon .mobSubMenu button svg {
+  width: 2em;
+  height: 2em;
 }
 
 @media screen and (max-width: 1024px) {
@@ -582,6 +592,9 @@
   }
   .topbar .mobNavbarMenu {
     display: flex;
+  }
+  .topbar .mobNavbarMenu .openCloseIcon {
+    max-width: 40em;
   }
   .topbar .mobNavbarMenu .openCloseIcon svg {
     width: 2em;
@@ -739,7 +752,8 @@
   color: #FFFDFA;
 }
 #Dark .topbar .mobNavbarMenu .openCloseIcon select option {
-  color: #000000;
+  background-color: #161616;
+  color: #F7F8F9;
 }
 #Dark .topbar .mobNavbarMenu .openCloseIcon button svg {
   fill: yellow;
@@ -869,11 +883,9 @@
 #Light .topbar .mobNavbarMenu .openCloseIcon .mobSubMenu {
   background-color: #FFFDFA;
 }
-#Light .topbar .mobNavbarMenu .openCloseIcon select {
-  color: #161616;
-}
 #Light .topbar .mobNavbarMenu .openCloseIcon select option {
-  color: #F7F8F9;
+  background-color: #F7F8F9;
+  color: #161616;
 }
 #Light .topbar .mobNavbarMenu .openCloseIcon button svg {
   fill: darkblue;

@@ -27,17 +27,18 @@
     .options {
       display: flex;
       align-items: center;
+
       a{
         padding-right: 30px;
         text-decoration: none;
         font-weight: bold;
-
         &:hover {
           filter: opacity(0.7);
           cursor: pointer;
           transition-timing-function: ease;
         }
       }
+
       select {
         appearance: none;
         background-color: transparent;
@@ -47,8 +48,8 @@
         -webkit-appearance: button;
         appearance: button;
         outline: none;
-        font-size: 15px;
-        
+        font-size: 16px;
+
         option {
           padding: 10px;
           color: inherit;
@@ -60,7 +61,7 @@
       }
   
       button{
-        margin-right: 20px;
+        margin-right: 2em;
         background: none;
         color: inherit;
         border: none;
@@ -69,7 +70,8 @@
         font: inherit;
         cursor: pointer;
         outline: inherit; 
-    
+        padding-right:1em;
+        padding-left: 1em;
         svg {
           width: 1.5em;
           height: 1.5em;
@@ -91,29 +93,42 @@
 
 // Shared styles for laptop and phone
 .mobNavbarMenu {
-  min-height: 5vh;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
+  min-height: fit-content;
+  padding: 1.25em;
+  position: relative;
+  padding: 2em 2em 1.25em 2em;
+  a {
+    svg {
+      width: 150px;
+      height: 30px;
+    }
+  }
+
 
   .openCloseIcon {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    margin: auto;
+    width: 100%;
+
     svg {
-      margin: auto;
-      width: 2.5em;
-      height: 2.5em;
-      display: block;
+      width: 2em;
+      height: 2em;
     }
 
     .mobSubMenu {
       list-style-type: none;
       flex-direction: column;
-      width: 100vw;
-      position: relative;
       font-weight: bold;
+      padding: 2em 0em 2em 0em;
+      width: 100%;
+      border-radius: 3em;
+      position: absolute;
+      top: calc(100% + 10px); /* Position it just below the parent .openCloseIcon */
+      left: 0;
+      z-index: 1;
+
       li{
         padding: 15px;
         margin: 10px;
@@ -121,39 +136,37 @@
           text-decoration: none;
         }
       }
-    }
-
-    select {
-      padding: 1.5em;
-      display: block;
-      margin: auto;
-      appearance: none;
-      background-color: transparent;
-      border: none;
-      font-weight: bold;
-      -webkit-appearance: button;
-      appearance: button;
-      outline: none;
-      font-size: 1em;
-      option {
-        padding: 10px;
+      select {
+        padding: 1.5em;
+        display: block;
+        margin: auto;
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        font-weight: bold;
+        -webkit-appearance: button;
+        appearance: button;
+        outline: none;
+        font-size: 1em;
+        option {
+          padding: 1em;
+          margin: 0;
+        }
       }
-    }
-
-    button{
-      display: block;
-      margin: auto;
-      background: none;
-      color: inherit;
-      border: none;
-      border-radius: 5px;
-      padding: 1.5em;
-      font: inherit;
-      outline: inherit; 
   
-      svg {
-        width: 25px;
-        height: 25px;
+      button{
+        display: block;
+        margin: auto;
+        background: none;
+        color: inherit;
+        border: none;
+        font: inherit;
+        outline: inherit; 
+    
+        svg {
+          width: 2em;
+          height: 2em;
+        }
       }
     }
   }
@@ -180,6 +193,7 @@
     .mobNavbarMenu {
       display: flex;
       .openCloseIcon {
+        max-width: 40em;
         svg {
           width: 2em;
           height: 2em;

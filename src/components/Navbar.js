@@ -61,7 +61,6 @@ export default function NavBar() {
         <div className="options">
           <Link to="/offer">{t("Offer")}</Link>
           <Link to="/events">{t("Events")}</Link>
-          {/*<Link to="/voucher">{t("Voucher")}</Link> */}
           <Link to="/reservation">{t("Reservation")}</Link>
           <Link to="/location">{t("Location")}</Link>
           <Link to="/openinghours">{t("Opening_Hours")}</Link>
@@ -82,20 +81,25 @@ export default function NavBar() {
       {/*small screen Navigation Menu starts here */}
       <div className="mobNavbarMenu">
 
+        <div className='logo'> 
+            {theme === "Light" ? (
+                <Link to="/"><LogoforLight /></Link>
+              ) : (
+                <Link to="/"><LogoforDark /></Link>
+              )}
+        </div>
         <div className="openCloseIcon" onClick= {() => {handleMenuClick(); handleMobOpen();}} >
           {menuClick ? <MenuXmark /> : <MenuBurger /> }
-
           {mobOpen && (
             <div className='mobSubMenu'>
               <li><Link to="/">{t("Home")}</Link></li>
               <li><Link to="/offer">{t("Offer")}</Link></li>
               <li><Link to="/events">{t("Events")}</Link></li>
-              {/*<li><Link to="/voucher">{t("Voucher")}</Link></li> */}
               <li><Link to="/reservation">{t("Reservation")}</Link></li>
               <li><Link to="/location">{t("Location")}</Link></li>
               <li><Link to="/openinghours">{t("Opening_Hours")}</Link></li>
 
-              <select defaultValue={selectedLanguage} onChange={chooseLanguage}>  
+              <select defaultValue={selectedLanguage} onChange={chooseLanguage} onClick={(e) => e.stopPropagation()}>  
                 <option value="en" >EN</option>
                 <option value="de">DE</option>
                 <option value="fr">FR</option>

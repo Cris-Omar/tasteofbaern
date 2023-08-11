@@ -43,7 +43,8 @@
         select {
           color: $PrimLightColor;
           option {
-            color: $SecDarkColor;
+            background-color: $PrimDarkColor;
+            color: $SecLightColor;
           }
         }
     
@@ -228,9 +229,10 @@
         }
     
         select {
-          color: $PrimDarkColor;
+
           option {
-            color: $SecLightColor;
+            background-color: $SecLightColor;
+            color: $PrimDarkColor;
           }
         }
     
