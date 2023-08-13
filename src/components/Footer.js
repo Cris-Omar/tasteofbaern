@@ -19,20 +19,21 @@ export default function Footer() {
         </div>
 
         <div className='impresum1'>
+          <Link to="/offer">{t('Offer')}</Link>
           <Link to="/contact">{t('Contact')}</Link>
-          <Link to="/legalNotice">{t('Legal_Notice')}</Link>
-          <Link to="/jobs">{t('Jobs')}</Link>
+          <Link to="/openinghours">{t('Opening_Hours')}</Link>
+          <Link to="/reservation">{t('Reservation')}</Link>
           <Link to="/team">{t('Team')}</Link>
-          <Link to="/newsletter">{t('Newsletter')}</Link>
+
         </div>
 
         <div className='impresum2'>
-          <Link to="/offer">{t('Offer')}</Link>
-          <Link to="/events">{t('Events')}</Link>
+          <Link to="/jobs">{t('Jobs')}</Link>
           {/*<Link to="/voucher">{t('Voucher')}</Link> */}
-          <Link to="/reservation">{t('Reservation')}</Link>
+          <Link to="/events">{t('Events')}</Link>
           <Link to="/location">{t('Location')}</Link>
-          <Link to="/openinghours">{t('Opening_Hours')}</Link>
+          <Link to="/newsletter">{t('Newsletter')}</Link>
+          <Link to="/legalNotice">{t('Legal_Notice')}</Link>
         </div>
       </div>
 

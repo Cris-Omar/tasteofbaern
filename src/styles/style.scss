@@ -110,6 +110,12 @@ h3 { padding: 1em; }
   @each $property, $value in $defaultSectionSettings {
     #{$property}: $value;
   }
+  p {
+    padding: 0.75em;
+  }
+  a {
+    text-decoration: none;
+  }
 }
 
 //__________________ Newsletter

@@ -12,9 +12,12 @@ export default function Reservation(){
       <h2>{t('Reservation')}</h2>
 
       <p>{t('Reservation_Subtext')}</p>
-      <p>{t('Reservation_mail')} <Link to="mailto:reservation@tasteofbaern.ch">reservation@tasteofbaern.ch</Link></p>
-      <p>{t('Reservation_formular')} <Link to="/contact">Formular</Link></p>
-      <p>{t('Reservation_phone')} 123456</p>
+      <p>{t('Reservation_mail')}</p>
+      <Link to="mailto:reservation@tasteofbaern.ch">reservation@tasteofbaern.ch</Link>
+      <p>{t('Reservation_formular')} </p>
+      <Link to="/contact">Formular</Link>
+      <p>{t('Reservation_phone')}</p>
+      <p>+41 123 45 67</p>
     </div>
   )
 }

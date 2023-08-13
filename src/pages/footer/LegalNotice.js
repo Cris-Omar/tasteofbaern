@@ -8,10 +8,8 @@ export default function LegalNotice() {
 
   return (
     <div className='legalnotice' id={theme}>
-        <h1>Legal Notice</h1>
-
-        <h2>in this site you will find our legal notice</h2>
-        
+      <h2>Legal Notice</h2>
+      <h3>in this site you will find our legal notice</h3>
     </div>
   )
 }

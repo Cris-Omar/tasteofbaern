@@ -24,9 +24,9 @@
   "Voucher": "Cupón",
 
   "Reservation": "Reservacion",
-  "Reservation_Subtext": "Si está interesado en hacer una reserva, tiene las siguientes opciones:",
+  "Reservation_Subtext": "Si está interesado en hacer una reserva, tiene las siguientes opciones",
   "Reservation_mail": "Envíenos un correo electrónico a",
-  "Reservation_formular": "a través de nuestro formulario de contacto:",
+  "Reservation_formular": "a través de nuestro formulario de contacto",
   "Reservation_phone": "O llámanos al número",
 
   "Location": "ubicación",

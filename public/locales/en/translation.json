@@ -25,10 +25,10 @@
   "Voucher": "Voucher",
 
   "Reservation": "Reservation",
-  "Reservation_Subtext": "We are pleased if you are interested in making a reservation, you have the following options:",
-  "Reservation_mail": "Send us an email at:",
-  "Reservation_formular": "via our contact form:",
-  "Reservation_phone": "Or call us at the number:",
+  "Reservation_Subtext": "We are pleased if you are interested in making a reservation, you have the following options",
+  "Reservation_mail": "Send us an email at",
+  "Reservation_formular": "via our contact form",
+  "Reservation_phone": "Or call us at the number",
 
   "Location": "Location",
   "Opening_Hours": "Opening Hours",

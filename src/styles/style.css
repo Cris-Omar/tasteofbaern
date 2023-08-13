@@ -781,6 +781,9 @@
   background-color: #161616;
   color: #F7F8F9;
 }
+#Dark .reservation a:hover {
+  color: #FF9955;
+}
 #Dark .openinghours {
   background-color: #161616;
   color: #F7F8F9;
@@ -926,6 +929,9 @@
 #Light .reservation {
   background-color: #FFFDFA;
   color: #000000;
+}
+#Light .reservation a:hover {
+  color: #FF9955;
 }
 #Light .openinghours {
   background-color: #FFFDFA;
@@ -1105,6 +1111,12 @@ h3 {
   max-width: auto;
   padding-top: 1.75em;
   padding-bottom: 3em;
+}
+.reservation p {
+  padding: 0.75em;
+}
+.reservation a {
+  text-decoration: none;
 }
 
 .newsletter {

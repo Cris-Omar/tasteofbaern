@@ -83,6 +83,11 @@
   .reservation {
     background-color: $PrimDarkColor;
     color: $SecLightColor;
+    a {
+      &:hover {
+        color: $ColorOnHover;
+      }
+    }
   }
 
   .openinghours {
@@ -290,6 +295,11 @@
   .reservation {
     background-color: $PrimLightColor;
     color: $SecDarkColor;
+    a {
+      &:hover {
+        color: $ColorOnHover;
+      }
+    }
   }
 
   .openinghours {

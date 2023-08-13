@@ -3,13 +3,10 @@ import React from 'react';
 export default function LogoforLight() {
   return (
     <svg
-      width="111.93755mm"
-      height="42.998379mm"
       viewBox="0 0 111.93755 42.998379"
       version="1.1"
       id="svg1"
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsSvg="http://www.w3.org/2000/svg"
     >
       <defs id="defs1" />
       <g id="layer1" transform="translate(-48.898931,-111.23838)">

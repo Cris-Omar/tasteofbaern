@@ -4,7 +4,7 @@ export default function Offer(){
 
   return(
     <div className="offer">
-      <h1>our meals..</h1>
+      <h2>Unsere Food-Stände:</h2>
     </div>
   )
 }
