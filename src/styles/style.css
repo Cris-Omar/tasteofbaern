@@ -1104,6 +1104,9 @@ h3 {
   padding-top: 1.75em;
   padding-bottom: 3em;
 }
+.openinghours p {
+  padding: 1em;
+}
 
 .reservation {
   min-height: 70vh;
@@ -1156,6 +1159,9 @@ h3 {
   overflow: hidden;
   border-style: solid;
   padding: 0.3em;
+  max-height: none;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in;
 }
 .events .posts .PostsItems p {
   font-size: 16px;
@@ -1170,7 +1176,7 @@ h3 {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 100%;
-  height: 100px;
+  height: 5em;
   background-position: left;
   background-size: cover;
 }
