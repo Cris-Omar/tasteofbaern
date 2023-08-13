@@ -4,13 +4,16 @@
   "Subwelcome_Text": "We look forward to seeing you!",
 
   "Home": "Home",
+
+  "Contact": "Contact",
   "contact_us": "Contact us!",
   "contact_us_text": "if you have a question or input, write us!",
   "name": "Name",
-  "mail": "Mail",
+  "email": "Mail",
+  "subject": "Subject",
   "message": "Message",
-  "upload_file": "Upload file",
   "send": "Send",
+  "confirmation_Success_Message": "Thank you for your message, it was sent successfully.",
 
   "Team_Member":"Team members",
   "Team_Name":"Name",
@@ -30,14 +33,15 @@
   "Location": "Location",
   "Opening_Hours": "Opening Hours",
 
-  "Contact": "Contact",
   "Legal_Notice": "Legal Notice",
 
   "Jobs": "Jobs",
   "Jobs_Subtext":"Vacancies will be listed here as they become available.",
 
   "Team": "Team",
+
   "Newsletter": "Newsletter",
+  "Newsletter_Subtext": "Sign up for our newsletter and you will be the first to know about our events.",
 
   "Location_Message": "We are located in",
   "Location_Text": "Open Google Maps to find the best route to us:"

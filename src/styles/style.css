@@ -818,7 +818,14 @@
   color: #F7F8F9;
 }
 #Dark .contact .contactForm form .object input, #Dark .contact .contactForm form .object textarea {
-  background-color: #000000;
+  background-color: #0A0A0A;
+  color: #F7F8F9;
+}
+#Dark .contact .contactForm form .object input:focus, #Dark .contact .contactForm form .object textarea:focus {
+  border-bottom: 1px solid gray;
+}
+#Dark .contact .contactForm form .confirmationMessage {
+  background-color: #43a047;
   color: #F7F8F9;
 }
 #Dark .contact .contactForm form button {
@@ -958,6 +965,13 @@
 }
 #Light .contact .contactForm form .object input, #Light .contact .contactForm form .object textarea {
   background-color: #F7F8F9;
+}
+#Light .contact .contactForm form .object input:focus, #Light .contact .contactForm form .object textarea:focus {
+  border-bottom: 1px solid black;
+}
+#Light .contact .contactForm form .confirmationMessage {
+  background-color: #43a047;
+  color: #000000;
 }
 #Light .contact .contactForm form button {
   background-color: #FF9955;
@@ -1226,6 +1240,7 @@ h3 {
 .contact .contactForm {
   max-width: 37.5em;
   margin: auto;
+  text-align: center; /* Center-align the content horizontally */
 }
 .contact .contactForm form {
   padding: 0em 2em 1em 2em;
@@ -1236,18 +1251,26 @@ h3 {
   font-weight: bold;
   text-align: left;
   display: block;
+  padding-left: 0.5em;
 }
 .contact .contactForm form .object input, .contact .contactForm form .object textarea {
+  border-radius: 0.5em;
   width: 100%;
   outline: none;
   resize: none;
   border: none;
   border-bottom: 1px solid rgb(184, 177, 177);
-  font-weight: bold;
+  padding-left: 1em;
 }
 .contact .contactForm form .object input:focus, .contact .contactForm form .object textarea:focus {
-  border-bottom: 1px solid black;
   filter: brightness(1.2);
+}
+.contact .contactForm form .confirmationMessage {
+  padding: 1em;
+  text-align: center;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10px;
 }
 .contact .contactForm form button {
   margin-top: 2.5em;

@@ -1,6 +1,6 @@
 import './styles/style.css';
 import React, { Suspense } from 'react';
-import ReactDOM from 'react-dom'; // Correct import
+import { createRoot } from 'react-dom/client';
 import { ThemeProvider } from './components/context/ThemeContext';
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
@@ -24,16 +24,15 @@ i18n
     }
   });
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
+  const root = createRoot(document.getElementById('root'));
+  
 root.render(
-
-    <Suspense fallback={<div>Loading....</div>}>
-      <React.StrictMode>
-        <ThemeProvider>
-          <App />
-        </ThemeProvider>
-      </React.StrictMode>
-    </Suspense>
+  <Suspense fallback={<div>Loading....</div>}>
+    <React.StrictMode>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </React.StrictMode>
+  </Suspense>
 );
 

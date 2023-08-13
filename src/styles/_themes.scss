@@ -129,15 +129,26 @@
   //__________________ Contact
   .contact {
     .contactForm {
+
+
+  
       form {
         .object {
           label {
             color:$SecLightColor;
           }
           input, textarea {
-            background-color: $SecDarkColor;
+            background-color: #0A0A0A;
             color: $SecLightColor;
+            &:focus {
+              border-bottom: 1px solid gray;
+            }
           }
+        }
+
+        .confirmationMessage {
+          background-color: #43a047;
+          color: $SecLightColor;
         }
   
         button {
@@ -333,7 +344,15 @@
         }
         input, textarea {
           background-color: $SecLightColor;
+          &:focus {
+            border-bottom: 1px solid black;
+          }
         }
+      }
+
+      .confirmationMessage {
+        background-color: #43a047;
+        color: $SecDarkColor;
       }
 
       button {
