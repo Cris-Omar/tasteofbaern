@@ -867,11 +867,17 @@
   color: #F7F8F9;
 }
 @media screen and (max-width: 1024px) {
+  #Dark .offer a {
+    color: #FF9955;
+  }
   #Dark .reservation a {
     color: #FF9955;
   }
 }
 @media screen and (max-width: 480px) {
+  #Dark .offer a {
+    color: #FF9955;
+  }
   #Dark .reservation a {
     color: #FF9955;
   }
@@ -1030,11 +1036,17 @@
   color: #000000;
 }
 @media screen and (max-width: 1024px) {
+  #Light .offer a {
+    color: #FF9955;
+  }
   #Light .reservation a {
     color: #FF9955;
   }
 }
 @media screen and (max-width: 480px) {
+  #Light .offer a {
+    color: #FF9955;
+  }
   #Light .reservation a {
     color: #FF9955;
   }
@@ -1377,16 +1389,10 @@ h3 {
     width: 100%;
     height: 60vh;
   }
-  .reservation a {
-    color: #FF9955;
-  }
 }
 @media screen and (max-width: 480px) {
   .location .frame {
     width: 100%;
     height: 50vh;
-  }
-  .reservation a {
-    color: #FF9955;
   }
 }/*# sourceMappingURL=style.css.map */

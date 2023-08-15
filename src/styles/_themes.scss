@@ -218,6 +218,13 @@
 
   //Media Query for Laptops
   @media screen and (max-width: 1024px) {
+    //__________________ Offer
+    .offer {
+      a {
+        color: $ColorOnHover;
+      }
+    }
+
     //__________________ Reservation
     .reservation {
       a {
@@ -228,6 +235,13 @@
 
   //Media Query for Phones
   @media screen and (max-width: 480px) {
+    //__________________ Offer
+    .offer {
+      a {
+        color: $ColorOnHover;
+      }
+    }
+
     //__________________ Reservation
     .reservation {
       a {
@@ -453,6 +467,13 @@
 
   //Media Query for Laptops
   @media screen and (max-width: 1024px) {
+    //__________________ Offer
+    .offer {
+      a {
+        color: $ColorOnHover;
+      }
+    }
+
     //__________________ Reservation
     .reservation {
       a {
@@ -463,6 +484,13 @@
 
   //Media Query for Phones
   @media screen and (max-width: 480px) {
+    //__________________ Offer
+    .offer {
+      a {
+        color: $ColorOnHover;
+      }
+    }
+    
     //__________________ Reservation
     .reservation {
       a {
