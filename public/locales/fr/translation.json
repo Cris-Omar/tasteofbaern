@@ -1,9 +1,8 @@
 {
+  "Home": "Accueil",
   "Welcome_Message": "bienvenue a",
   "Welcome_Text": "nous rassemblerons différents plats de streetfood en un seul lieu, où vous pourrez manger. boire. relax.",
-  "Subwelcome_Text": "Nous nous réjouissons de te voir!",
-
-  "Home": "Accueil",
+  "Subwelcome_Text": "Nous nous réjouissons de vous voir!",
 
   "Contact": "Contact",
   "contact_us": "Contactez-nous!",
@@ -15,13 +14,22 @@
   "send": "Envoyer",
   "confirmation_Success_Message": "Merci pour votre message, il a été envoyé avec succès.",
 
+  "Team": "L'équipe",
   "Team_Member":"Les membres de notre équipe",
   "Team_Name":"Nom",
   "Team_Position":"Position",
   "Team_Contact":"Contact",
 
-  "Offer": "offre",
+  "Offer": "Offre",
+  "Offer_title": "Voici bientôt la liste de nos stands de nourriture",
+  "Offer_title_Subtext": "Nous sommes actuellement à la recherche de partenaires qui souhaitent présenter leur offre culinaire chez nous.",
+  "interested": "Vous êtes intéressé(e) ? Contactez-nous via notre",
+  "contact_form": "Formulaire de contact",
+  "release_note": "Cette liste sera mise à jour dès que tous les partenaires seront connus. Merci de votre compréhension.",
+
   "Events": "Evénements",
+  "events_upcoming": "Evénements",
+
   "Voucher": "Voucher",
 
   "Reservation": "Réservation",
@@ -29,21 +37,24 @@
   "Reservation_mail": "Envoyez-nous un e-mail à",
   "Reservation_formular": "via notre formulaire de contact",
   "Reservation_phone": "Ou appelez-nous au numéro",
+  "Reservation_phone_number": "(Le numéro de téléphone sera bientôt affiché ici)",
 
-  "Location": "Localisation",
-  "Opening_Hours": "Horaires d'ouverture",
+  "Opening_Hours": "horaire",
+  "opening_hours_title": "Heures d'ouverture",
+  "opening_hours_data": "Du lundi au vendredi : 11h00 à 22h00",
+  "delivery_day": "Livraison le matin : 11:30 à 14:30",
+  "delivery_night": "Livraison le soir 18:30 à 21:30",
+  "opening_ps": "Nous sommes également ouverts les jours fériés.",
 
   "Legal_Notice": "Avis juridique",
 
   "Jobs": "Emplois",
   "Jobs_Subtext":"Les postes vacants seront listés ici dès qu'ils seront disponibles.",
 
-  "Team": "L'équipe",
-
   "Newsletter": "Newsletter",
   "Newsletter_Subtext": "Inscris-toi à notre newsletter, tu seras ainsi le premier informé de nos événements.",
 
+  "Location": "Localisation",
   "Location_Message": "Nous sommes situés à",
   "Location_Text": "Ouvrez Google Maps pour trouver le meilleur itinéraire:"
-
 }

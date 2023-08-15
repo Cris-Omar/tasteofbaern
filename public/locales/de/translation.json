@@ -1,9 +1,8 @@
 {
+  "Home": "Startseite",
   "Welcome_Message": "Willkommen zu",
   "Welcome_Text": "wir bringen diverse Streetfoods zu einen Ort, an dem Sie Essen. Trinken. und Chillen.",
-  "Subwelcome_Text": "wir warten auf dich!",
-
-  "Home": "Startseite",
+  "Subwelcome_Text": "wir hoffen sie bald in unserer location, sehen zu dürfen!",
 
   "Contact": "Kontakt",
   "contact_us": "Kontaktiere uns!",
@@ -15,13 +14,22 @@
   "send": "Senden",
   "confirmation_Success_Message": "Vielen dank für Ihre Nachricht, diese wurde erfolgreich gesendet.",
 
+  "Team": "Team",
   "Team_Member":"Team Mitglieder",
   "Team_Name":"Name",
   "Team_Position":"Position",
   "Team_Contact":"Kontakt",
 
   "Offer": "Angebot",
+  "Offer_title": "Hier werden bald unsere Food-Stände aufgelistet",
+  "Offer_title_Subtext": "Wir sind derzeit auf der Suche nach Partnern, die ihr kulinarisches Angebot bei uns präsentieren möchten.",
+  "interested": "Interessiert? Kontaktieren Sie uns über unser",
+  "contact_form": "Kontaktformular",
+  "release_note": "Diese Liste wird aktualisiert, sobald alle Partner bekannt sind. Vielen Dank für Ihr Verständnis.",
+
   "Events": "Events",
+  "events_upcoming": "Kommende Events",
+  
   "Voucher": "Gutschein",
   
   "Reservation": "Reservierung",
@@ -29,22 +37,25 @@
   "Reservation_mail": "Senden sie uns eine Email an",
   "Reservation_formular": "über unser Kontaktformular",
   "Reservation_phone": "Oder rufen sie uns an, unter der Nummer",
+  "Reservation_phone_number": "(Tel. Nummer Wird bald hier angezeigt)",
 
-  "Location": "Standort",
-  "Opening_Hours": "Öffnungszeiten",
+  "Opening_Hours": "Zeitplan",
+  "opening_hours_title": "Die Öffnungszeiten",
+  "opening_hours_data": "Mo - So: 11:00 bis 22:00",
+  "delivery_day": "Lieferung Mittags: 11:30 bis 14:30",
+  "delivery_night": "Lieferung Abends 18:30 bis 21:30",
+  "opening_ps": "Wir haben übrigens auuch an Feiertagen geöffnet.",
 
   "Legal_Notice": "Rechtlicher Hinweis",
 
   "Jobs": "Karriere",
   "Jobs_Subtext":"Vakanzen werden hier aufgelistet, sobald diese verfügbar sind.",
-
-  "Team": "Team",
   
   "Newsletter": "Newsletter",
   "Newsletter_Subtext": "Melde dich für unsere Newsletter an, so erfährst du als aller erstes von unseren Events",
-
+  
+  "Location": "Standort",
   "Location_Message": "Wir befinden uns in",
   "Location_Text": "Öffnen Sie Google Maps, um die beste Route zu uns zu finden:"
- 
 }
 

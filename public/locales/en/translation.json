@@ -1,9 +1,8 @@
 {
+  "Home": "Home",
   "Welcome_Message": "Welcome to",
   "Welcome_Text": "we will bring different streetfoods into one location, where you Eat. Drink. and Chill.",
-  "Subwelcome_Text": "We look forward to seeing you!",
-
-  "Home": "Home",
+  "Subwelcome_Text": "We look forward to see you soon!",
 
   "Contact": "Contact",
   "contact_us": "Contact us!",
@@ -15,13 +14,22 @@
   "send": "Send",
   "confirmation_Success_Message": "Thank you for your message, it was sent successfully.",
 
+  "Team": "Team",
   "Team_Member":"Team members",
   "Team_Name":"Name",
   "Team_Position":"Position",
   "Team_Contact":"Contact",
 
   "Offer": "Offer",
+  "Offer_title": "Our food stalls will soon be listed here",
+  "Offer_title_Subtext": "We are currently looking for partners who would like to present their culinary offerings in our location.",
+  "interested": "Interested? Contact us via our",
+  "contact_form": "Contact form",
+  "release_note": "This list will be updated as soon as all partners are known. Thank you for your understanding.",
+
   "Events": "Events",
+  "events_upcoming": "Upcoming Events",
+
   "Voucher": "Voucher",
 
   "Reservation": "Reservation",
@@ -29,21 +37,24 @@
   "Reservation_mail": "Send us an email at",
   "Reservation_formular": "via our contact form",
   "Reservation_phone": "Or call us at the number",
+  "Reservation_phone_number": "Tel. number Will be displayed here soon)",
 
-  "Location": "Location",
-  "Opening_Hours": "Opening Hours",
+  "Opening_Hours": "Horario",
+  "opening_hours_title": "Opening Hours",
+  "opening_hours_data": "Monday - Sunday: 11 AM to 10 PM",
+  "delivery_day": "Lunch delivery: 11:30 AM till 02:30 PM",
+  "delivery_night": "Evening delivery: 06:30 PM till 09:30 PM",
+  "opening_ps": "By the way, we are also open on public holidays.",
 
   "Legal_Notice": "Legal Notice",
 
   "Jobs": "Jobs",
   "Jobs_Subtext":"Vacancies will be listed here as they become available.",
 
-  "Team": "Team",
-
   "Newsletter": "Newsletter",
   "Newsletter_Subtext": "Sign up for our newsletter and you will be the first to know about our events.",
-
+  
+  "Location": "Location",
   "Location_Message": "We are located in",
   "Location_Text": "Open Google Maps to find the best route to us:"
-
 }

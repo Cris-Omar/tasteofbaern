@@ -133,6 +133,15 @@ h3 { padding: 1em; }
   @each $property, $value in $defaultSectionSettings {
     #{$property}: $value;
   }
+  p {
+    padding: 1em;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 //__________________ Events
@@ -368,6 +377,13 @@ h3 { padding: 1em; }
       height: 60vh;
     }
   }
+
+  //__________________ Reservation
+  .reservation {
+    a {
+      color: $ColorOnHover;
+    }
+  }
 }
 
 
@@ -378,6 +394,13 @@ h3 { padding: 1em; }
     .frame{
       width: 100%;
       height: 50vh;
+    }
+  }
+
+//__________________ Reservation
+  .reservation {
+    a {
+      color: $ColorOnHover;
     }
   }
 }

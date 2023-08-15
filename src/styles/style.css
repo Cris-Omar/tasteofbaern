@@ -766,6 +766,9 @@
   background-color: #161616;
   color: #F7F8F9;
 }
+#Dark .offer p a:hover {
+  color: #FF9955;
+}
 #Dark .events {
   background-color: #161616;
   color: #F7F8F9;
@@ -863,6 +866,16 @@
   background-color: #161616;
   color: #F7F8F9;
 }
+@media screen and (max-width: 1024px) {
+  #Dark .reservation a {
+    color: #FF9955;
+  }
+}
+@media screen and (max-width: 480px) {
+  #Dark .reservation a {
+    color: #FF9955;
+  }
+}
 
 #Light {
   background-color: #FFFDFA;
@@ -958,6 +971,9 @@
   background-color: #FFFDFA;
   color: #000000;
 }
+#Light .offer p a:hover {
+  color: #FF9955;
+}
 #Light .location {
   background-color: #FFFDFA;
   color: #000000;
@@ -1012,6 +1028,16 @@
 #Light .nomatch {
   background-color: #FFFDFA;
   color: #000000;
+}
+@media screen and (max-width: 1024px) {
+  #Light .reservation a {
+    color: #FF9955;
+  }
+}
+@media screen and (max-width: 480px) {
+  #Light .reservation a {
+    color: #FF9955;
+  }
 }
 
 body {
@@ -1136,6 +1162,15 @@ h3 {
   max-width: auto;
   padding-top: 1.75em;
   padding-bottom: 3em;
+}
+.offer p {
+  padding: 1em;
+}
+.offer a {
+  text-decoration: none;
+}
+.offer a:hover {
+  text-decoration: underline;
 }
 
 .events {
@@ -1342,10 +1377,16 @@ h3 {
     width: 100%;
     height: 60vh;
   }
+  .reservation a {
+    color: #FF9955;
+  }
 }
 @media screen and (max-width: 480px) {
   .location .frame {
     width: 100%;
     height: 50vh;
+  }
+  .reservation a {
+    color: #FF9955;
   }
 }/*# sourceMappingURL=style.css.map */

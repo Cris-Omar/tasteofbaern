@@ -65,6 +65,13 @@
   .offer {
     background-color: $PrimDarkColor;
     color: $SecLightColor;
+    p{
+      a{
+        &:hover {
+          color: $ColorOnHover;
+        }
+      }
+    }
   }
 
   .events {
@@ -208,6 +215,26 @@
     background-color: $PrimDarkColor;
     color: $SecLightColor;
   }
+
+  //Media Query for Laptops
+  @media screen and (max-width: 1024px) {
+    //__________________ Reservation
+    .reservation {
+      a {
+        color: $ColorOnHover;
+      }
+    }
+  }
+
+  //Media Query for Phones
+  @media screen and (max-width: 480px) {
+    //__________________ Reservation
+    .reservation {
+      a {
+        color: $ColorOnHover;
+      }
+    }
+  }
 }
   
 //______________________________________________
@@ -332,6 +359,13 @@
   .offer {
     background-color: $PrimLightColor;
     color: $SecDarkColor;
+    p{
+      a{
+        &:hover {
+          color: $ColorOnHover;
+        }
+      }
+    }
   }
 
   .location {
@@ -415,5 +449,25 @@
   .nomatch {
     background-color: $PrimLightColor;
     color: $SecDarkColor;
+  }
+
+  //Media Query for Laptops
+  @media screen and (max-width: 1024px) {
+    //__________________ Reservation
+    .reservation {
+      a {
+        color: $ColorOnHover;
+      }
+    }
+  }
+
+  //Media Query for Phones
+  @media screen and (max-width: 480px) {
+    //__________________ Reservation
+    .reservation {
+      a {
+        color: $ColorOnHover;
+      }
+    }
   }
 }

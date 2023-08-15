@@ -17,7 +17,7 @@ export default function Reservation(){
       <p>{t('Reservation_formular')} </p>
       <Link to="/contact">Formular</Link>
       <p>{t('Reservation_phone')}</p>
-      <p>+41 123 45 67</p>
+      <p>{t('Reservation_phone_number')}</p>
     </div>
   )
 }
