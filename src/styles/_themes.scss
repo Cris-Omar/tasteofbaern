@@ -74,6 +74,15 @@
     }
   }
 
+  //__________________ Contact
+  .location {
+    background-color: $PrimDarkColor;
+    color: $SecLightColor;
+    a{
+      color: $ColorOnHover;
+    }
+  }
+
   .events {
     background-color: $PrimDarkColor;
     color: $SecLightColor;
@@ -91,8 +100,9 @@
     background-color: $PrimDarkColor;
     color: $SecLightColor;
     a {
+      color: $ColorOnHover;
       &:hover {
-        color: $ColorOnHover;
+        color: $SecLightColor;
       }
     }
   }
@@ -125,11 +135,6 @@
   }
 
   .newsletter {
-    background-color: $PrimDarkColor;
-    color: $SecLightColor;
-  }
-
-  .location {
     background-color: $PrimDarkColor;
     color: $SecLightColor;
   }
@@ -337,8 +342,9 @@
     background-color: $PrimLightColor;
     color: $SecDarkColor;
     a {
+      color: $ColorOnHover;
       &:hover {
-        color: $ColorOnHover;
+        color: $SecDarkColor;
       }
     }
   }
@@ -381,10 +387,13 @@
       }
     }
   }
-
+  //__________________ Contact
   .location {
     background-color: $PrimLightColor;
     color: $SecDarkColor;
+    a{
+      color: $ColorOnHover;
+    }
   }
 
   .jobs {

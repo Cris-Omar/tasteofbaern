@@ -35,7 +35,8 @@
   "Reservation": "Réservation",
   "Reservation_Subtext": "Nous sommes heureux que vous soyez intéressé par une réservation, vous avez les possibilités suivantes",
   "Reservation_mail": "Envoyez-nous un e-mail à",
-  "Reservation_formular": "via notre formulaire de contact",
+  "Reservation_formular": "via notre ",
+  "reservation_contact_form": "formulaire de contact",
   "Reservation_phone": "Ou appelez-nous au numéro",
   "Reservation_phone_number": "(Le numéro de téléphone sera bientôt affiché ici)",
 

@@ -769,6 +769,13 @@
 #Dark .offer p a:hover {
   color: #FF9955;
 }
+#Dark .location {
+  background-color: #161616;
+  color: #F7F8F9;
+}
+#Dark .location a {
+  color: #FF9955;
+}
 #Dark .events {
   background-color: #161616;
   color: #F7F8F9;
@@ -784,8 +791,11 @@
   background-color: #161616;
   color: #F7F8F9;
 }
-#Dark .reservation a:hover {
+#Dark .reservation a {
   color: #FF9955;
+}
+#Dark .reservation a:hover {
+  color: #F7F8F9;
 }
 #Dark .openinghours {
   background-color: #161616;
@@ -809,10 +819,6 @@
   color: #F7F8F9;
 }
 #Dark .newsletter {
-  background-color: #161616;
-  color: #F7F8F9;
-}
-#Dark .location {
   background-color: #161616;
   color: #F7F8F9;
 }
@@ -949,8 +955,11 @@
   background-color: #FFFDFA;
   color: #000000;
 }
-#Light .reservation a:hover {
+#Light .reservation a {
   color: #FF9955;
+}
+#Light .reservation a:hover {
+  color: #000000;
 }
 #Light .openinghours {
   background-color: #FFFDFA;
@@ -983,6 +992,9 @@
 #Light .location {
   background-color: #FFFDFA;
   color: #000000;
+}
+#Light .location a {
+  color: #FF9955;
 }
 #Light .jobs {
   background-color: #FFFDFA;
@@ -1266,6 +1278,7 @@ h3 {
 }
 .location a {
   text-decoration: none;
+  color: #FF9955;
 }
 .location a:hover {
   filter: opacity(0.7);
@@ -1325,7 +1338,6 @@ h3 {
   resize: none;
   border: none;
   border-bottom: 1px solid rgb(184, 177, 177);
-  padding-left: 1em;
 }
 .contact .contactForm form .object input:focus, .contact .contactForm form .object textarea:focus {
   filter: brightness(1.2);

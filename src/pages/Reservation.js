@@ -15,7 +15,7 @@ export default function Reservation(){
       <p>{t('Reservation_mail')}</p>
       <Link to="mailto:reservation@tasteofbaern.ch">reservation@tasteofbaern.ch</Link>
       <p>{t('Reservation_formular')} </p>
-      <Link to="/contact">Formular</Link>
+      <Link to="/contact">{t('reservation_contact_form')}</Link>
       <p>{t('Reservation_phone')}</p>
       <p>{t('Reservation_phone_number')}</p>
     </div>
