@@ -4,34 +4,45 @@
 
 import { serve } from 'https://deno.land/std@0.168.0/http/server.ts'
 
+console.log(`Function "email" up and running!`);
+
 const RESEND_API_KEY = Deno.env.get('RESEND_API_KEY')
 
-const handler = async (_request: Request): Promise<Response> => {
-  const res = await fetch('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${RESEND_API_KEY}`,
-    },
-    body: JSON.stringify({
-      from: 'contactform@tasteofbaern.ch',
-      to: 'info@tasteofbaern.ch',
-      subject: 'hello world',
-      html: '<strong>it works!</strong>',
-    }),
-  })
+serve(async (request: Request): Promise<Response> => {
+  const { email, name, message, subject }: { email: string; message: string; name: string; subject: string;} =
+      await request.json();
 
-  const data = await res.json()
+  try {
+      const res = await fetch("https://api.resend.com/emails", {
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${RESEND_API_KEY}`,
+          },
+          body: JSON.stringify({
+              from: email,
+              to: "contactform@tasteofbaern.ch",
+              subject: subject,
+              message: message,
+          }),
+      });
 
-  return new Response(JSON.stringify(data), {
-    status: 200,
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  })
-}
+      if (!res.ok) {
+          return new Response(JSON.stringify({ error: "An error occurred" }), { status: 500 });
+      }
 
-serve(handler)
+      const data = await res.json();
+
+      return new Response(JSON.stringify(data), {
+          status: 200,
+          headers: {
+              "Content-Type": "application/json",
+          },
+      });
+  } catch (error: any) {
+      return new Response(JSON.stringify({ error: error?.message }), { status: 500 });
+  }
+});
 
 // To invoke:
 // curl -i --location --request POST 'http://localhost:54321/functions/v1/' \

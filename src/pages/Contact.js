@@ -10,7 +10,7 @@ export default function Contact() {
 
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState(null);
-
+  const [messageText, setMessageText] = useState('');
   const [showConfirmation, setShowConfirmation] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -66,7 +66,7 @@ export default function Contact() {
 
           <div className='object'>
             <label>{t('name')}</label>
-            <input type="text" name="name" required />
+            <input type="text" name="name" required maxLength={80}/>
           </div>
           <div className='object'>
             <label>{t('email')}</label>
@@ -74,11 +74,25 @@ export default function Contact() {
           </div>
           <div className='object'>
             <label>{t('subject')}</label>
-            <input type="text" name="subject" required />
+            <input type="text" name="subject" required maxLength={120}/>
           </div>
+          
           <div className='object'>
             <label>{t('message')}</label>
-            <textarea rows={8} name="message" required />
+            <textarea
+              rows={8}
+              name="message"
+              required
+              maxLength={600}
+              value={messageText}
+              onChange={(e) => setMessageText(e.target.value)}
+            />
+            <span className="characterCount">
+              {messageText.length || 0} / 600 characters
+              {messageText.length > 600 && (
+                <span className="characterLimitExceeded"> - Limit Exceeded</span>
+              )}
+            </span>
           </div>
 
           {submitError && <div className="error">{submitError}</div>}

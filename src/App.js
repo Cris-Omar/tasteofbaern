@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 import Home from './pages/Home';
-import Contact1 from './pages/Contact1';
+import Contact from './pages/Contact';
 import Jobs from './pages/Jobs';
 import LegalNotice from './pages/LegalNotice';
 import NoMatch from './pages/NoMatch';
@@ -33,7 +33,7 @@ function App() {
           <Routes>
             <Route index element={<Home />} />
             <Route path='' element={<Home />} />
-            <Route path='contact' element={<Contact1 />} />
+            <Route path='contact' element={<Contact />} />
             <Route path='jobs' element={<Jobs />} />
             <Route path='legalnotice' element={<LegalNotice />} />
             <Route path='offer' element={<Offer />} />
