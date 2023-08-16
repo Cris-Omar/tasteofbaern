@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import "../../styles/style.css"
+import "../styles/style.css"
 import { useTranslation } from "react-i18next"
-import Mail from "../../assets/icons/Mail"
+import Mail from "../assets/icons/Mail"
 
 export default function Team(){
 

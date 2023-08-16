@@ -1,6 +1,6 @@
-import "../../styles/style.css";
+import "../styles/style.css";
 import React from 'react';
-import { useThemeContext } from '../../components/context/ThemeContext';
+import { useThemeContext } from '../components/context/ThemeContext';
 import { useTranslation } from "react-i18next";
 
 export default function Jobs() {

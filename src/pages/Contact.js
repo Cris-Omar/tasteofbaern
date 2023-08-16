@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import "../../styles/style.css";
-import { useThemeContext } from "../../components/context/ThemeContext";
+import "../styles/style.css";
+import { useThemeContext } from "../components/context/ThemeContext";
 import { useTranslation } from 'react-i18next';
-import supabase from '../../config/SupabaseClient';
+import supabase from '../config/SupabaseClient';
 
 export default function Contact() {
   const { theme } = useThemeContext();

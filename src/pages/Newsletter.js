@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import "../../styles/style.css"
+import "../styles/style.css"
 
 export default function Newsletter(){
 
