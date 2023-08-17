@@ -1342,6 +1342,9 @@ h3 {
 .contact .contactForm form .object input:focus, .contact .contactForm form .object textarea:focus {
   filter: brightness(1.2);
 }
+.contact .contactForm form .object .characterCount {
+  font-style: italic;
+}
 .contact .contactForm form .confirmationMessage {
   padding: 1em;
   text-align: center;
