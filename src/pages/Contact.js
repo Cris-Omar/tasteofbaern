@@ -74,7 +74,7 @@ export default function Contact() {
           </div>
           <div className="object">
             <label>{t('email')}</label>
-            <input type="email" name="email" required />
+            <input type="email" name="email" required maxLength={100} />
           </div>
           <div className="object">
             <label>{t('subject')}</label>
