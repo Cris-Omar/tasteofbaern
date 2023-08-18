@@ -66,8 +66,8 @@ export default function NavBar() {
           <Link to="/openinghours">{t("Opening_Hours")}</Link>
 
           <select defaultValue={selectedLanguage} onChange={chooseLanguage}>  
-            <option value="en" >EN</option>
             <option value="de">DE</option>
+            <option value="en">EN</option>
             <option value="fr">FR</option>
             <option value="es">ES</option>
           </select>

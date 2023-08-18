@@ -766,7 +766,7 @@
   background-color: #161616;
   color: #F7F8F9;
 }
-#Dark .offer p a:hover {
+#Dark .offer p a {
   color: #FF9955;
 }
 #Dark .location {
@@ -986,7 +986,7 @@
   background-color: #FFFDFA;
   color: #000000;
 }
-#Light .offer p a:hover {
+#Light .offer p a {
   color: #FF9955;
 }
 #Light .location {

@@ -67,9 +67,7 @@
     color: $SecLightColor;
     p{
       a{
-        &:hover {
-          color: $ColorOnHover;
-        }
+        color: $ColorOnHover;
       }
     }
   }
@@ -381,9 +379,7 @@
     color: $SecDarkColor;
     p{
       a{
-        &:hover {
-          color: $ColorOnHover;
-        }
+        color: $ColorOnHover;
       }
     }
   }
