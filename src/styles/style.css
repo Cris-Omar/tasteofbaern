@@ -1098,6 +1098,19 @@ h3 {
   padding: 0.5em 0.5em 0em 0.5em;
 }
 
+.menu {
+  min-height: 70vh;
+  margin: auto;
+  padding-top: 1.75em;
+  padding-bottom: 3em;
+}
+.menu .bar table {
+  margin: auto;
+}
+.menu p {
+  padding: 1em;
+}
+
 .voucher {
   min-height: 70vh;
   margin: auto;
