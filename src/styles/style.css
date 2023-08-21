@@ -96,7 +96,6 @@
 }
 .image-gallery-left-nav[disabled],
 .image-gallery-right-nav[disabled] {
-  cursor: disabled;
   opacity: 0.6;
   pointer-events: none;
 }
@@ -1085,7 +1084,6 @@ h3 {
 .home {
   min-height: 70vh;
   margin: auto;
-  max-width: auto;
   padding-top: 1.75em;
   padding-bottom: 3em;
 }
@@ -1103,7 +1101,6 @@ h3 {
 .voucher {
   min-height: 70vh;
   margin: auto;
-  max-width: auto;
   padding-top: 1.75em;
   padding-bottom: 3em;
 }
@@ -1112,7 +1109,6 @@ h3 {
   max-width: 800px;
   min-height: 70vh;
   margin: auto;
-  max-width: auto;
   padding-top: 1.75em;
   padding-bottom: 3em;
 }
@@ -1142,7 +1138,6 @@ h3 {
 .jobs {
   min-height: 70vh;
   margin: auto;
-  max-width: auto;
   padding-top: 1.75em;
   padding-bottom: 3em;
 }
@@ -1150,7 +1145,6 @@ h3 {
 .openinghours {
   min-height: 70vh;
   margin: auto;
-  max-width: auto;
   padding-top: 1.75em;
   padding-bottom: 3em;
 }
@@ -1161,7 +1155,6 @@ h3 {
 .reservation {
   min-height: 70vh;
   margin: auto;
-  max-width: auto;
   padding-top: 1.75em;
   padding-bottom: 3em;
 }
@@ -1175,7 +1168,6 @@ h3 {
 .newsletter {
   min-height: 70vh;
   margin: auto;
-  max-width: auto;
   padding-top: 1.75em;
   padding-bottom: 3em;
 }
@@ -1183,7 +1175,6 @@ h3 {
 .offer {
   min-height: 70vh;
   margin: auto;
-  max-width: auto;
   padding-top: 1.75em;
   padding-bottom: 3em;
 }
@@ -1200,7 +1191,6 @@ h3 {
 .events {
   min-height: 70vh;
   margin: auto;
-  max-width: auto;
   padding-top: 1.75em;
   padding-bottom: 3em;
 }
@@ -1261,7 +1251,6 @@ h3 {
 .legalnotice {
   min-height: 70vh;
   margin: auto;
-  max-width: auto;
   padding-top: 1.75em;
   padding-bottom: 3em;
 }
@@ -1269,7 +1258,6 @@ h3 {
 .location {
   min-height: 70vh;
   margin: auto;
-  max-width: auto;
   padding-top: 1.75em;
   padding-bottom: 3em;
 }
@@ -1296,7 +1284,6 @@ h3 {
 .nomatch {
   min-height: 70vh;
   margin: auto;
-  max-width: auto;
   padding-top: 1.75em;
   padding-bottom: 3em;
 }
@@ -1311,7 +1298,6 @@ h3 {
 .contact {
   min-height: 70vh;
   margin: auto;
-  max-width: auto;
   padding-top: 1.75em;
   padding-bottom: 3em;
 }

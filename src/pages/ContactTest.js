@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import '../styles/style.css';
 import { useThemeContext } from '../components/context/ThemeContext';
 import { useTranslation } from 'react-i18next';
-import supabase from '../config/SupabaseClient';
 
 export default function Contact() {
   const { theme } = useThemeContext();
@@ -13,45 +12,46 @@ export default function Contact() {
   const [messageText, setMessageText] = useState('');
   const [showConfirmation, setShowConfirmation] = useState(false);
 
+  const RESEND_API_KEY = process.env.RESEND_API_KEY;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     const formData = new FormData(e.target);
     const email = formData.get('email');
     const name = formData.get('name');
     const subject = formData.get('subject');
     const message = formData.get('message');
-
+  
     try {
       setSubmitting(true);
       setSubmitError(null);
-
-      const { data, error } = await supabase
-      .from('contactForm')
-      .insert([
-        { name: name, email: email, subject: subject, message: message },
-      ]);
-
-      if (error) {
-        setSubmitError('Error submitting form. Please try again later.');
-        console.error('Error submitting form:', error);
-      } else {
-        console.log('Form submitted successfully:', data);
-        setMessageText('');
+  
+      const res = await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${RESEND_API_KEY}`,
+        },
+        body: JSON.stringify({
+          from: email, // Use user's email
+          to: 'info@tasteofbaern.ch',
+          subject: subject, // Use user's subject
+          html: message, // Use user's message
+        }),
+      });
+  
+      if (res.ok) {
+        // Email sent successfully
         setShowConfirmation(true);
+        setMessageText(''); // Clear message text
         setTimeout(() => {
-        setShowConfirmation(false);
-        }, 19000);
-
-      // Reset form fields
-      e.target.reset();
-    }
-    
-      if (!error) {
-        setShowConfirmation(true); 
-        setTimeout(() => {
-          setShowConfirmation(false); 
-        }, 19000); 
+          setShowConfirmation(false);
+        }, 1900);
+      } else {
+        // Handle error case
+        setSubmitError('Error sending email. Please try again later.');
+        console.error('Error response from API:', res);
       }
     } catch (error) {
       setSubmitError('An unexpected error occurred. Please try again later.');
@@ -60,7 +60,8 @@ export default function Contact() {
       setSubmitting(false);
     }
   };
-
+  
+  
   const characterLimit = 600;
 
   return (
