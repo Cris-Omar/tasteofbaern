@@ -135,6 +135,31 @@
   .newsletter {
     background-color: $PrimDarkColor;
     color: $SecLightColor;
+
+    form {
+      .object {
+        label {
+          color:$SecLightColor;
+        }
+        input, textarea {
+          background-color: #0A0A0A;
+          color: $SecLightColor;
+          &:focus {
+            border-bottom: 1px solid gray;
+          }
+        }
+      }
+
+      .confirmationMessage {
+        background-color: #43a047;
+        color: $SecLightColor;
+      }
+
+      button {
+        background-color: $ColorOnHover;
+        color: $PrimDarkColor;
+      }
+    }
   }
 
   .jobs {
@@ -144,9 +169,6 @@
   //__________________ Contact
   .contact {
     .contactForm {
-
-
-  
       form {
         .object {
           label {
@@ -334,6 +356,28 @@
   .newsletter {
     background-color: $PrimLightColor;
     color: $SecDarkColor;
+    form {
+      .object {
+        label {
+          color:$SecDarkColor;
+        }
+        input, textarea {
+          background-color: $SecLightColor;
+          &:focus {
+            border-bottom: 1px solid black;
+          }
+        }
+      }
+
+      .confirmationMessage {
+        background-color: #43a047;
+        color: $SecDarkColor;
+      }
+
+      button {
+        background-color: $ColorOnHover;
+      }
+    }
   }
 
   .reservation {
@@ -383,7 +427,7 @@
       }
     }
   }
-  //__________________ Contact
+  //__________________ Location
   .location {
     background-color: $PrimLightColor;
     color: $SecDarkColor;
@@ -397,7 +441,7 @@
     color: $SecDarkColor;
   }
 
-//__________________ Contact
+  //__________________ Contact
 .contact {
   .contactForm {
     form {

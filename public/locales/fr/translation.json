@@ -54,6 +54,8 @@
 
   "Newsletter": "Newsletter",
   "Newsletter_Subtext": "Inscris-toi à notre newsletter, tu seras ainsi le premier informé de nos événements.",
+  "confirmation_Success_Subscription": "Merci de vous être abonné à notre newsletter!",
+  "Subscribe": "S'abonner",
 
   "Location": "Localisation",
   "Location_Message": "Nous sommes situés à",

@@ -56,6 +56,8 @@
 
   "Newsletter": "Newsletter",
   "Newsletter_Subtext": "Suscríbase a nuestro boletín y será el primero en enterarse de nuestros eventos.",
+  "confirmation_Success_Subscription": "Gracias por suscribirse a nuestro boletín!",
+  "Subscribe": "Suscríbete",
 
   "Location_Message": "Estamos situados en",
   "Location_Text": "Abre Google Maps para encontrar la mejor ruta hacia nosotros:"

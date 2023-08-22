@@ -8,7 +8,7 @@ export default function Menu(){
 
   return(
     <div className="menu">
-      <p>The Menus and drinks availible will be displayed here!!!</p>
+      <h2>{t('Menu_Title')}</h2>
       <Bar />
     </div>
   )

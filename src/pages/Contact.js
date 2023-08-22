@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
 import '../styles/style.css';
-import { useThemeContext } from '../components/context/ThemeContext';
+import React, { useState } from 'react';
+import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from 'react-i18next';
 import supabase from '../config/SupabaseClient';
 
 export default function Contact() {
-  const { theme } = useThemeContext();
+  
   const { t } = useTranslation();
 
   const [submitting, setSubmitting] = useState(false);
@@ -27,9 +27,9 @@ export default function Contact() {
       setSubmitError(null);
 
       const { data, error } = await supabase
-      .from('contactForm')
+      .from('ContactForm')
       .insert([
-        { name: name, email: email, subject: subject, message: message },
+        { name, email, subject, message },
       ]);
 
       if (error) {
@@ -64,7 +64,7 @@ export default function Contact() {
   const characterLimit = 600;
 
   return (
-    <div className="contact" id={theme}>
+    <div className="contact">
       <h2>{t('contact_us')}</h2>
       <h3>{t('contact_us_text')}</h3>
 
