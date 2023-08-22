@@ -1,10 +1,6 @@
-import { useTranslation } from "react-i18next"
 import "../../styles/style.css"
 
 export default function Bar(){
-
-  const { t } = useTranslation();
-
   return(
     <div className="bar">
       <table>			

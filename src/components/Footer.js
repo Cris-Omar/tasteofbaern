@@ -32,7 +32,7 @@ export default function Footer() {
           {/*<Link to="/voucher">{t('Voucher')}</Link> */}
           <Link to="/events">{t('Events')}</Link>
           <Link to="/location">{t('Location')}</Link>
-          {/*<Link to="/newsletter">{t('Newsletter')}</Link>*/}
+          <Link to="/newsletter">{t('Newsletter')}</Link>
           {/*<Link to="/legalNotice">{t('Legal_Notice')}</Link>*/}
         </div>
       </div>

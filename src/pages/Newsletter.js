@@ -11,26 +11,27 @@ export default function Newsletter() {
   const [name, setName] = useState("");
   const [submitError, setSubmitError] = useState(null);
   const [showConfirmation, setShowConfirmation] = useState(false);
-  const [reCAPTCHAValue, setReCAPTCHAValue] = useState(null); // Define reCAPTCHA state
+  const [reCAPTCHAValue, setReCAPTCHAValue] = useState(null);
+
+  const reCAPTCHAKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
 
   const handleSubscribe = async (e) => {
     e.preventDefault();
 
-    // Check if reCAPTCHA was successfully completed
     if (reCAPTCHAValue) {
       try {
         const { data, error } = await supabase
           .from("Subscriptions")
           .insert([
-            {
-              email,
-              name,
-            },
+            { email, name, },
           ]);
 
         if (error) {
+          console.log(process.env);
+
           setSubmitError("Error submitting form. Please try again later.");
         } else {
+          console.log('Form submitted successfully:', data);
           setEmail("");
           setName("");
           setShowConfirmation(true);
@@ -68,13 +69,14 @@ export default function Newsletter() {
           />
         </div>
 
-        <ReCAPTCHA
-          sitekey="6LcK28YnAAAAAHRV3vOxQatuKoWtolcJzNzSQmCD"
-          onChange={(value) => {
-            // Store the reCAPTCHA value when it changes
-            setReCAPTCHAValue(value);
-          }}
-        />
+        <div className='recaptcha'>
+          <ReCAPTCHA
+            sitekey={reCAPTCHAKey}
+            onChange={(value) => {
+              setReCAPTCHAValue(value);
+            }}
+          />
+        </div>
 
         {submitError && <div className="error">{submitError}</div>}
         {showConfirmation ? (

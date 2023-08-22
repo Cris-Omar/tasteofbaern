@@ -1,7 +1,7 @@
 import '../styles/style.css';
 import React, { useState } from 'react';
-import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from 'react-i18next';
+import ReCAPTCHA from "react-google-recaptcha";
 import supabase from '../config/SupabaseClient';
 
 export default function Contact() {
@@ -12,6 +12,9 @@ export default function Contact() {
   const [submitError, setSubmitError] = useState(null);
   const [messageText, setMessageText] = useState('');
   const [showConfirmation, setShowConfirmation] = useState(false);
+  const [reCAPTCHAValue, setReCAPTCHAValue] = useState(null);
+
+  const reCAPTCHAKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -21,43 +24,44 @@ export default function Contact() {
     const name = formData.get('name');
     const subject = formData.get('subject');
     const message = formData.get('message');
+    if (reCAPTCHAValue) {
+      try {
+        setSubmitting(true);
+        setSubmitError(null);
 
-    try {
-      setSubmitting(true);
-      setSubmitError(null);
+        const { data, error } = await supabase
+        .from('ContactForm')
+        .insert([
+          { name, email, subject, message },
+        ]);
 
-      const { data, error } = await supabase
-      .from('ContactForm')
-      .insert([
-        { name, email, subject, message },
-      ]);
+        if (error) {
+          setSubmitError('Error submitting form. Please try again later.');
+          console.error('Error submitting form:', error);
+        } else {
+          console.log('Form submitted successfully:', data);
+          setMessageText('');
+          setShowConfirmation(true);
+          setTimeout(() => {
+          setShowConfirmation(false);
+          }, 19000);
 
-      if (error) {
-        setSubmitError('Error submitting form. Please try again later.');
-        console.error('Error submitting form:', error);
-      } else {
-        console.log('Form submitted successfully:', data);
-        setMessageText('');
-        setShowConfirmation(true);
-        setTimeout(() => {
-        setShowConfirmation(false);
-        }, 19000);
-
-      // Reset form fields
-      e.target.reset();
-    }
-    
-      if (!error) {
-        setShowConfirmation(true); 
-        setTimeout(() => {
-          setShowConfirmation(false); 
-        }, 19000); 
+        // Reset form fields
+        e.target.reset();
       }
-    } catch (error) {
-      setSubmitError('An unexpected error occurred. Please try again later.');
-      console.error('Error submitting form:', error);
-    } finally {
-      setSubmitting(false);
+        if (!error) {
+          setShowConfirmation(true); 
+          setTimeout(() => {
+            setShowConfirmation(false); 
+          }, 19000); 
+        }
+      } catch (error) {
+        setSubmitError('An unexpected error occurred. Please try again later.');
+        //console.error('Error submitting form:', error);
+
+      } finally {
+        setSubmitting(false);
+      }
     }
   };
 
@@ -107,6 +111,16 @@ export default function Contact() {
               {t('confirmation_Success_Message')}
             </div>
           ) : null}
+          
+          <div className='recaptcha'>
+            <ReCAPTCHA
+              sitekey={reCAPTCHAKey}
+              onChange={(value) => {
+                // Store the reCAPTCHA value when it changes
+                setReCAPTCHAValue(value);
+              }}
+            />
+          </div>
           
           <button type="submit" disabled={submitting}>
             {submitting ? t('sending') : t('send')}

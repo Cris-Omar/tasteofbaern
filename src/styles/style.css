@@ -1246,6 +1246,13 @@ h3 {
 .newsletter form .object .characterCount {
   font-style: italic;
 }
+.newsletter form .recaptcha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 1em;
+}
 .newsletter form .confirmationMessage {
   padding: 1em;
   text-align: center;
@@ -1422,6 +1429,13 @@ h3 {
 }
 .contact .contactForm form .object .characterCount {
   font-style: italic;
+}
+.contact .contactForm form .recaptcha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 1em;
 }
 .contact .contactForm form .confirmationMessage {
   padding: 1em;

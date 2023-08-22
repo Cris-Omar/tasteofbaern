@@ -172,6 +172,13 @@ h3 { padding: 1em; }
         font-style: italic; 
       }
     }
+    .recaptcha {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      padding-top: 1em;
+    }
 
     .confirmationMessage {
       padding: 1em;
@@ -365,6 +372,14 @@ h3 { padding: 1em; }
         .characterCount {
           font-style: italic; 
         }
+      }
+
+      .recaptcha {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-top: 1em;
       }
 
       .confirmationMessage {
