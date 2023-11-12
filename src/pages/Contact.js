@@ -14,8 +14,6 @@ export default function Contact() {
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [reCAPTCHAValue, setReCAPTCHAValue] = useState(null);
 
-  const reCAPTCHAKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -114,7 +112,7 @@ export default function Contact() {
           
           <div className='recaptcha'>
             <ReCAPTCHA
-              sitekey={reCAPTCHAKey}
+              sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
               onChange={(value) => {
                 // Store the reCAPTCHA value when it changes
                 setReCAPTCHAValue(value);
